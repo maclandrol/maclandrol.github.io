@@ -15,6 +15,3 @@ title: Blog posts
 </div>
 
 <div class="infinite-spinner"></div>
-
-<script src="/javascripts/infinite-jekyll.js"></script>
-
