@@ -66,12 +66,10 @@ $(function() {
 	
   function fetchPostWithIndex(index, callback) {
     var postURL = postURLs[index];
-    $(".post-list").append(postURL)
-   /* $.get(postURL, function(data) {
-      $(data).find(".post").appendTo(".post-list");
+    $.get(postURL, function(data) {
+    $(".post-list").append(postURL);
       callback();
-    });*/
-    callback()
+    });
   }
   
   function disableFetching() {
