@@ -4,7 +4,7 @@ layout: none
 {
   "posts" : [
     {% for post in site.posts %}
-    "{{ post.url }}"{% unless forloop.last %},{% endunless %}
+    "{{ post.date | date_to_string }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a>"{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ]
 }
