@@ -10,7 +10,7 @@ title:
 tagline:             'A blog about bioinformatics, linux and boring stuff ...'
 description:         ''
 url:                 http://mrnoutahi.com
-baseurl:             ''
+baseurl:             'http://mrnoutahi.com/'
 paginate:            3
 github_username:     maclandrol
 twitter_username:    ENoutahi
