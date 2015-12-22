@@ -1,0 +1,1 @@
+A blog about bioinformatics, procrastination, opinion on non-relevant things and other boring stuff
