@@ -2,10 +2,10 @@
 layout: post
 title:  "First Post"
 date:   2015-12-22
-tag: fr
+tag: en
 ---
 
-2016 is near, and like any new years it comes with taking new resolutions. 
+2016 is near, and like any new year it comes with taking new resolutions. 
 <!--more-->
 This year I decided to :
 
@@ -28,4 +28,4 @@ I can't promise that this blog will be regularly updated, but I will do my best.
 
 Merry christmas and happy new year to all !!
 
-~Emmanuel
+<span class="More"> ~Emmanuel</span>

@@ -284,23 +284,8 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.loadMore {
- @extend %textButton;
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  
-  &.loading {
-    &::after {
-      position: absolute;
-      left: 0;
-      right: 0;
-      background-color: white;
-      width: 100%;
-      content: 'Loading...';
-      color: #bcbcbc;
-    }
-  } 
+.More{
+  float: left;
 }
 
 .sidebar-circular img {
