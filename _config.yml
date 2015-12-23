@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 
 # Setup
 title:               
-tagline:             'A blog about bioinformatics, linux and boring stuff ...'
+tagline:             'Sharing my thoughts on bioinformatics, linux, and some boring stuff ...'
 description:         ''
 url:                 http://mrnoutahi.com
 baseurl:             'http://mrnoutahi.com'
