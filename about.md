@@ -9,4 +9,4 @@ I’m interested in anything related to bioinformatics, genomics, high-tech and 
 
 I love hacking things to fit my needs. So I thought maybe I should share it with other people.
 
-I'm open for collaboration on any exciting project. Follow me on [github](http://github.com/{{ site.github_username }}) and[twitter](https://twitter.com/{{ site.twitter_username }}).
+I'm open for collaboration on any exciting project. Follow me on [github](http://github.com/{{ site.github_username }}) and [twitter](https://twitter.com/{{ site.twitter_username }}).
