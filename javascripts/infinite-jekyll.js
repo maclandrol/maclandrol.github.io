@@ -40,7 +40,7 @@ $(function() {
     if (!postURLs) return;
     
     isFetchingPosts = true;
-    
+
     // Load as many posts as there were present on the page when it loaded
     // After successfully loading a post, load the next one
     var loadedPosts = 0,
@@ -66,10 +66,8 @@ $(function() {
 	
   function fetchPostWithIndex(index, callback) {
     var postURL = postURLs[index];
-    $.get(postURL, function(data) {
-    $(".post-list").append(postURL);
-      callback();
-    });
+    $(".post-list").append("<li>" + postURL.date + " &raquo; <a href=&quot;"+postURL.url+"&quot;> " + postURL.title + "</a></li>");
+    callback();
   }
   
   function disableFetching() {

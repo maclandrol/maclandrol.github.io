@@ -694,16 +694,19 @@ a.pagination-item:hover {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
 
+.post-list li{
+  margin: 5px auto;
+}
 .infinite-spinner {
   display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  background-color: #333;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #828282;
   margin: 60px auto;
   
-  -webkit-animation: scaleout 1.0s infinite ease-in-out;
-  animation: scaleout 1.0s infinite ease-in-out;
+  -webkit-animation: scaleout 1.5s infinite ease-in-out;
+  animation: scaleout 1.5s infinite ease-in-out;
 }
 
 @-webkit-keyframes scaleout {

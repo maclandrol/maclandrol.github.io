@@ -10,8 +10,8 @@ title:
 tagline:             'A blog about bioinformatics, linux and boring stuff ...'
 description:         ''
 url:                 http://mrnoutahi.com
-baseurl:             'http://mrnoutahi.com/'
-paginate:            3
+baseurl:             'http://mrnoutahi.com'
+paginate:            5
 github_username:     maclandrol
 twitter_username:    ENoutahi
 hostsite:            https://github.com/maclandrol/maclandrol.github.io
