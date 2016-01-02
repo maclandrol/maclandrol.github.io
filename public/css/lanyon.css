@@ -682,6 +682,21 @@ a.pagination-item:hover {
 .post-list li{
   margin: 5px auto;
 }
+
+.g-comments{
+  max-width: 24rem;
+}
+@media (min-width: 32em) {
+  .g-comments {
+    max-width: 28rem;
+  }
+}
+@media (min-width: 50em) {
+  .g-comments {
+    max-width: 32rem;
+  }
+}
+
 .infinite-spinner {
   display: block;
   width: 30px;
