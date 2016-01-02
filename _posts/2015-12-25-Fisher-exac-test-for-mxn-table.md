@@ -13,7 +13,7 @@ So I decided to perform a Fisher's exact test, despite its controversies (see [F
 
 It turns out that the R function actually use a heavily edited C version of the FORTRAN subroutine FEXACT ([algorithm 643 by Mehta and Patel](http://dl.acm.org/citation.cfm?id=214326&picked=formats&preflayout=tabs)). My plan was to first find the [fortran 90 source code of FEXACT](http://jblevins.org/mirror/amiller/) and then use [f2py](http://docs.scipy.org/doc/numpy-dev/f2py/) to import the fortran module in my python code. I quickly learned that although this sound simple, it was nearly impossible without any basic notion in fortran. 
 
-Since f2py couldn't handle real precision when ```SELECTED_REAL_KIND``` is used, I first created a [.f2py_f2cmap](https://sysbio.ioc.ee/projects/f2py2e/FAQ.html#q-what-if-fortran-90-code-uses-type-spec-kind-kind) file with ```{'real':{'dp':'double'}}``` in it in order to map any instance of dp to double. This wasn't enough, so I changed the structure of the FEXACT module :
+Since f2py couldn't handle real precision when ```SELECTED_REAL_KIND``` is used, I first created a [.f2py_f2cmap](https://sysbio.ioc.ee/projects/f2py2e/FAQ.html#q-what-if-fortran-90-code-uses-type-spec-kind-kind) file with ```{'real':{'dp':'double'}}``` in it in order to map any instance of dp to double. This wasn't enough, so I changed the structure of the FEXACT module to this :
 
 ```
 MODULE Types
@@ -28,3 +28,9 @@ USE Types
 CONTAINS
 ...
 END MODULE Fisher_Exact
+
+```
+
+I also changed the 
+
+
