@@ -6,7 +6,7 @@ tag: en, stat
 ---
 
 
-I was working on a project where I needed to compare categorical data in other to determine if there is any association between them. For my particular problem, a chi2 test wouldn't work, so I needed a Fisher's exact test. Since there aren't any code in python to perform the Fisher's exact test for larger than 2x2 table, I decided to write my own. You can find it here : https://github.com/maclandrol/FisherExact.
+I was working on a project where I needed to compare categorical data in other to determine if there is any association between them. For my particular problem, a chi2 test wouldn't work, so I needed a Fisher's exact test. Since there aren't any code in python to perform the Fisher's exact test for larger than 2x2 table, I decided to write my own. You can find it here : https://github.com/maclandrol/FisherExact .
 <!--more-->
 Usually, you would use a chi2 test for independence (which is implementated in most programming languages) to compare association between categorical data. The problem was that I had low count in my contingency table.
 
@@ -54,8 +54,10 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
   <tbody>
     <tr>
       <td>
-      	3  1<br>
+      	<pre>
+      	3  1 
       	1  3
+      	</pre>
       </td>
       <td>default</td>
       <td>0.4857</td>
@@ -63,10 +65,12 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
     </tr>
     <tr>
       <td>
-      	1    3   10    6<br>
-		2    3   10    7<br>
-		1    6   14   12<br>
+      <pre>
+      	1    3   10    6
+		2    3   10    7
+		1    6   14   12 
 	    0    1    9   11
+	  </pre>
       </td>
       <td>
       	default
@@ -80,10 +84,12 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
     </tr>
      <tr>
       <td>
-      	1    3   10    6<br>
-		2    3   10    7<br>
-		1    6   14   12<br>
+      <pre>
+      	1    3   10    6
+		2    3   10    7
+		1    6   14   12 
 	    0    1    9   11
+	  </pre>
       </td>
       <td>
       	simulated p-values, replicates=1e5
@@ -97,10 +103,12 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
     </tr>
          <tr>
       <td>
-      	1    3   10    6<br>
-		2    3   10    7<br>
-		1    6   14   12<br>
+      <pre>
+      	1    3   10    6
+		2    3   10    7
+		1    6   14   12 
 	    0    1    9   11
+	  </pre>
       </td>
       <td>
       	hybrid
@@ -123,9 +131,8 @@ In hybrid mode, an approximation based upon asymptotic chi-squared probabilities
   	else if(hybrid) {
             ## Cochran condition for asym.chisq. decision:
             PVAL <- .Call(C_Fexact, x, c(5, 180, 1), workspace, mult)
-            // Added by me for explanation
-            // This line call Fexact from the C source code, on matrix x.
-
+            ## Added by me for explanation
+            ## This line call Fexact from the C source code, on matrix x.
     } else {
             ##  expect < 0 : exact
             PVAL <- .Call(C_Fexact, x, c(-1, 100, 0), workspace, mult)
