@@ -57,8 +57,14 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
   <tbody>
     <tr>
       <td>
-<pre>3	1
-1	3</pre>
+	<table border="0" CELLPADDING="1" CELLSPACING="1">         
+           <td>3</td>
+           <td>1</td>
+           <tr>
+           <td>1</td>
+           <td>3</td>
+           </tr>
+           </table>
       </td>
       <td>default (exact)</td>
       <td>0.4857</td>
@@ -66,10 +72,30 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
     </tr>
     <tr>
       <td>
-<pre>1	3	10	6
-2	3	10	7
-1	6	14	12
-0	1	9	11</pre>
+	<table border="0" CELLPADDING="1" CELLSPACING="1">
+           <td>1</td>
+           <td>3</td>
+           <td>10</td>
+           <td>6</td>
+           <tr>
+           <td>2</td>
+           <td>3</td>
+           <td>10</td>
+           <td>7</td>
+           </tr>
+			<tr>
+           <td>1</td>
+           <td>6</td>
+           <td>14</td>
+           <td>12</td>
+           </tr>
+			<tr>
+           <td>0</td>
+           <td>1</td>
+           <td>9</td>
+           <td>11</td>
+           </tr>
+           </table>
       </td>
       <td>
       	default (exact)
@@ -83,10 +109,30 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
     </tr>
      <tr>
       <td>
-<pre>1	3	10	6
-2	3	10	7
-1	6	14	12
-0	1	9	11</pre>
+	<table border="0" CELLPADDING="1" CELLSPACING="1">
+           <td>1</td>
+           <td>3</td>
+           <td>10</td>
+           <td>6</td>
+           <tr>
+           <td>2</td>
+           <td>3</td>
+           <td>10</td>
+           <td>7</td>
+           </tr>
+			<tr>
+           <td>1</td>
+           <td>6</td>
+           <td>14</td>
+           <td>12</td>
+           </tr>
+			<tr>
+           <td>0</td>
+           <td>1</td>
+           <td>9</td>
+           <td>11</td>
+           </tr>
+           </table>
       </td>
       <td>
       	simulated p-values, replicates=1e5
@@ -100,10 +146,30 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
     </tr>
          <tr>
       <td>
-<pre>1	3	10	6
-2	3	10	7
-1	6	14	12
-0	1	9	11</pre>
+	<table border="0" CELLPADDING="1" CELLSPACING="1">
+           <td>1</td>
+           <td>3</td>
+           <td>10</td>
+           <td>6</td>
+           <tr>
+           <td>2</td>
+           <td>3</td>
+           <td>10</td>
+           <td>7</td>
+           </tr>
+			<tr>
+           <td>1</td>
+           <td>6</td>
+           <td>14</td>
+           <td>12</td>
+           </tr>
+			<tr>
+           <td>0</td>
+           <td>1</td>
+           <td>9</td>
+           <td>11</td>
+           </tr>
+           </table>
       </td>
       <td>
       	hybrid
