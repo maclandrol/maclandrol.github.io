@@ -46,19 +46,17 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
 <table>
   <thead>
     <tr>
-      <th>data</th>
+      <th>Data</th>
       <th>Parameters</th>
-      <th>R's p-value</th>
-      <th>FisherExact in python</th>
+      <th>pval : fisher.test (R)</th>
+      <th>pval : FisherExact (python)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>
-<pre>
-3	1
-1	3
-</pre>
+<pre>3	1
+1	3</pre>
       </td>
       <td>default</td>
       <td>0.4857</td>
@@ -66,12 +64,10 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
     </tr>
     <tr>
       <td>
-<pre>
-1	3	10	6
+<pre>1	3	10	6
 2	3	10	7
 1	6	14	12
-0	1	9	11
-</pre>
+0	1	9	11</pre>
       </td>
       <td>
       	default
@@ -85,12 +81,10 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
     </tr>
      <tr>
       <td>
-<pre>
-1	3	10	6
+<pre>1	3	10	6
 2	3	10	7
 1	6	14	12
-0	1	9	11
-</pre>
+0	1	9	11</pre>
       </td>
       <td>
       	simulated p-values, replicates=1e5
@@ -104,12 +98,10 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
     </tr>
          <tr>
       <td>
-<pre>
-1	3	10	6
+<pre>1	3	10	6
 2	3	10	7
 1	6	14	12
-0	1	9	11
-</pre>
+0	1	9	11</pre>
       </td>
       <td>
       	hybrid
@@ -128,18 +120,18 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
 As expected, we have the same p-value for 2x2 table (here the scipy fisher_exact is used) and for tables larger than 2x2 with the default parameters. For the simulated p-value, R doesn't offer a seed option, so I was not able to make a comparision, but I think it's working.
 In hybrid mode, an approximation based upon asymptotic chi-squared probabilities is used instead of Fisher exact test probabilities. You can set some arguments in FEXACT (expect=5.0, percnt=80.0 and emin=1.0), to obtain the **'Cochran'** condition. In R's source code, percnt=180.0 is used instead : 
   
- {% highlight R %}
-  	else if(hybrid) {
-            ## Cochran condition for asym.chisq. decision:
-            PVAL <- .Call(C_Fexact, x, c(5, 180, 1), workspace, mult)
-            ## Added by me for explanation
-            ## This line call Fexact from the C source code, on matrix x.
-    } else {
-            ##  expect < 0 : exact
-            PVAL <- .Call(C_Fexact, x, c(-1, 100, 0), workspace, mult)
-    }
+{% highlight R %}
+else if(hybrid) {
+	## Cochran condition for asym.chisq. decision:
+	PVAL <- .Call(C_Fexact, x, c(5, 180, 1), workspace, mult)
+	## ~ Added by me for explanation
+	## ~ This line call Fexact from the C source code, on matrix x
+} else {
+	##  expect < 0 : exact
+	PVAL <- .Call(C_Fexact, x, c(-1, 100, 0), workspace, mult)
+}
    
- {% endhighlight %}
+{% endhighlight %}
 
 I'm not sure if this is an error, but the comment preceding said "Cochran condition", so I guess something is not right. [I report it as a bug](https://bugs.r-project.org/bugzilla/show_bug.cgi?id=16654), although I'm not sure if this is a real bug or I'm just too stupid... Anyway, in my implementation I use percent=80.0, and unfortunately, on my test data, the hybrid and the exact mode return the same p-value.
 
