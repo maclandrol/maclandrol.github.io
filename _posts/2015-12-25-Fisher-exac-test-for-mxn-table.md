@@ -57,7 +57,7 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
   <tbody>
     <tr>
       <td>
-	<table border="0" CELLPADDING="1" CELLSPACING="1">         
+	<table border="0">         
            <td>3</td>
            <td>1</td>
            <tr>
@@ -72,7 +72,7 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
     </tr>
     <tr>
       <td>
-	<table border="0" CELLPADDING="1" CELLSPACING="1">
+	<table border="0">
            <td>1</td>
            <td>3</td>
            <td>10</td>
@@ -109,7 +109,7 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
     </tr>
      <tr>
       <td>
-	<table border="0" CELLPADDING="1" CELLSPACING="1">
+	<table border="0">
            <td>1</td>
            <td>3</td>
            <td>10</td>
@@ -201,6 +201,6 @@ else if(hybrid) {
    
 {% endhighlight %}
 
-I'm not sure if this is an error, but the comment preceding said "Cochran condition", so I guess something is not right. [I report it as a bug](https://bugs.r-project.org/bugzilla/show_bug.cgi?id=16654), although I'm not sure if this is a real bug or I'm just too stupid... Anyway, in my implementation I use percent=80.0, and unfortunately, on my test data, the hybrid and the exact mode return the same p-value.
+I'm not sure if this is an error, but the comment preceding said "Cochran condition", so I guess something is not right. [I report it as a bug](https://bugs.r-project.org/bugzilla/show_bug.cgi?id=16654), although I'm not sure if this is a real bug or I'm just too stupid... Anyway, in my implementation I use ```percnt=80.0```, and unfortunately, on my test data, the hybrid and the exact mode return the same p-value.
 
 In conclusion, you can now do Fisher's exact test on any mxn contingency table in python. I hope this will be useful to someone.
