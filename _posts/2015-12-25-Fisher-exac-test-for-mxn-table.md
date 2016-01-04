@@ -9,15 +9,15 @@ tag: stat, python
 I was working on a project where I needed to compare categorical data in other to determine if there is any association between them. For my particular problem, a chi2 test wouldn't work, so I needed a Fisher's exact test. Since there aren't any code in python to perform the Fisher's exact test for larger than 2x2 table, I decided to write my own. You can find it here : [FisherExact](https://github.com/maclandrol/FisherExact).
 <!--more-->
 
-Usually, you would use a chi2 test for independence (which is implementated in most programming languages) to compare association between categorical data. The problem was that I had low count in my contingency table.
+Usually, you would use a chi2 test for independence (which is implemented in most programming languages) to compare association between categorical data. The problem was that I had low count in my contingency table.
 
-Although it's commonly accepted that the Cochran's rule **of at least 5 count in each cell of the expected table is too strict**, I actually had really low total counts and often cells with 0 count in my observed table. Thus, using an exact test is probably more suited. In fact, [McDonald recommend, as a rule of thumb, to use an exact test when the total count is lower than 1000](http://www.biostathandbook.com/small.html). 
+Although it's commonly accepted that the Cochran's rule **of at least 5 count in each cell of the expected table is too strict**, I actually had really low total counts and cells with 0 count in my observed table. Thus, using an exact test is probably more suited. In fact, [McDonald recommend, as a rule of thumb, to use an exact test when the total count is lower than 1000](http://www.biostathandbook.com/small.html). 
 
-So I decided to perform a Fisher's exact test, despite its controversies (see [Frank Harrell's post with detailled references on stats.stackexchange.com](http://stats.stackexchange.com/questions/14226/given-the-power-of-computers-these-days-is-there-ever-a-reason-to-do-a-chi-squa/14230#14230)). Unfortunately, I didn't find any implementation of the Fisher's exact test for larger than 2x2 table in python. To my knowledge, only [R offer a Fisher's exact test for table larger than 2x2](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/fisher.test.html). I then decided to rewrite the R function in python. How difficult would have that been right ?
+So I decided to perform a Fisher's exact test, despite its controversies (see [Frank Harrell's post with detailled references on stats.stackexchange.com](http://stats.stackexchange.com/questions/14226/given-the-power-of-computers-these-days-is-there-ever-a-reason-to-do-a-chi-squa/14230#14230)). Unfortunately, I didn't find any implementation of the Fisher's exact test for larger than 2x2 table in python. To my knowledge, only [R offer a Fisher's exact test for table larger than 2x2](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/fisher.test.html). Since the main part of my project was already written in python, I decided to rewrite the R function in python for consistency. How difficult would have that been ? right ?
 
-It turns out that the R function actually use a heavily edited C version of the FORTRAN subroutine FEXACT ([algorithm 643 by Mehta and Patel](http://dl.acm.org/citation.cfm?id=214326&picked=formats&preflayout=tabs)). My plan was to first find the [fortran 90 source code of FEXACT](http://jblevins.org/mirror/amiller/) and then use [f2py](http://docs.scipy.org/doc/numpy-dev/f2py/) to import the fortran module in my python code. I quickly learned that although this sound simple, it was nearly impossible without any basic notion in fortran. 
+It turns out that the R function actually use a heavily edited C version of the FORTRAN subroutine FEXACT ([algorithm 643 by Mehta and Patel](http://dl.acm.org/citation.cfm?id=214326&picked=formats&preflayout=tabs)). My plan was to first find the [fortran 90 source code of FEXACT](http://jblevins.org/mirror/amiller/) and then use [f2py](http://docs.scipy.org/doc/numpy-dev/f2py/) to import the fortran module in my python code. I quickly learned that, although this sound simple, it was nearly impossible without any basic notion in fortran. 
 
-Since f2py couldn't handle real precision when ```SELECTED_REAL_KIND``` is used, I first created a [.f2py_f2cmap](https://sysbio.ioc.ee/projects/f2py2e/FAQ.html#q-what-if-fortran-90-code-uses-type-spec-kind-kind) file with ```{'real':{'dp':'double'}}``` in it in order to map any instance of dp to double. This wasn't enough, so I changed the structure of the FEXACT module to this :
+Since f2py couldn't handle real precision when ```SELECTED_REAL_KIND``` is used, I first created a [.f2py_f2cmap](https://sysbio.ioc.ee/projects/f2py2e/FAQ.html#q-what-if-fortran-90-code-uses-type-spec-kind-kind) file with ```{'real':{'dp':'double'}}``` in it in order to map any instance of ```dp``` to double. This wasn't enough, so I changed the structure of the FEXACT module to this :
 
 {% highlight fortran %}
 MODULE Types
@@ -41,7 +41,9 @@ I wrote the python code based on the R version, so it should essentially do the 
 
 The source code is available here : https://github.com/maclandrol/FisherExact.
 
+
 ### Comparing R's fisher.test to my fisher_exact.
+
 
 <table>
   <thead>
@@ -58,7 +60,7 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
 <pre>3	1
 1	3</pre>
       </td>
-      <td>default</td>
+      <td>default (exact)</td>
       <td>0.4857</td>
       <td>0.4857</td>
     </tr>
@@ -70,7 +72,7 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
 0	1	9	11</pre>
       </td>
       <td>
-      	default
+      	default (exact)
       </td>
       <td>
       0.7827
@@ -117,8 +119,8 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
   </table>
 
 
-As expected, we have the same p-value for 2x2 table (here the scipy fisher_exact is used) and for tables larger than 2x2 with the default parameters. For the simulated p-value, R doesn't offer a seed option, so I was not able to make a comparision, but I think it's working.
-In hybrid mode, an approximation based upon asymptotic chi-squared probabilities is used instead of Fisher exact test probabilities. You can set some arguments in FEXACT (expect=5.0, percnt=80.0 and emin=1.0), to obtain the **'Cochran'** condition. In R's source code, percnt=180.0 is used instead : 
+As expected, we have the same p-values for 2x2 table (here the scipy fisher_exact is used) and for tables larger than 2x2 with the default parameters. For the simulated p-value, R doesn't offer a seed option, so I was not able to make a comparision, but I think it's working.
+In hybrid mode, an approximation based upon asymptotic chi-squared probabilities is used instead of Fisher exact test probabilities. You can set some arguments in FEXACT (```expect=5.0, percnt=80.0 and emin=1.0```), to obtain the **'Cochran'** condition. In R's source code, ```percnt=180.0``` is used instead : 
   
 {% highlight R %}
 else if(hybrid) {
