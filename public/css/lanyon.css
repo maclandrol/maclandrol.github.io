@@ -262,13 +262,13 @@ h1, h2, h3, h4, h5, h6 {
   width: 5rem;
   height: 5rem;
   margin-right: 0.5rem;
-  border-radius: 2.3rem;
-  -webkit-border-radius: 2.3rem;
-  -moz-border-radius: 2.3rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
   background: url(/public/photo.jpg) no-repeat;
-
+  background-size: cover;
   }
 
 .sidebar-info-text{

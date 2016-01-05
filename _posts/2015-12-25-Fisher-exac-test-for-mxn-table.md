@@ -39,6 +39,8 @@ I also made the input and output more explicit, using ```INTENT(OUT)``` and ```I
 
 I wrote the python code based on the R version, so it should essentially do the same thing. For 2x2 contingency  table, the [fisher_exact](http://docs.scipy.org/doc/scipy-0.16.0/reference/generated/scipy.stats.fisher_exact.html) function from scipy.stats is used. Since R also provide p-values computation by Monte Carlo simulation, I tried to offer the same thing in my knockoff version. A quick glance at R sources, reveal that the fisher_exact simulation use a C version of the [rcont2 subroutine](http://people.sc.fsu.edu/~jburkardt/f_src/asa159/asa159.html) (written in Fortran90). After some struggle, during which, I learn about [array indexing order in C vs Fortran](http://docs.scipy.org/doc/numpy-1.10.0/reference/internals.html#multidimensional-array-indexing-order-issues), in-place modification of argument with ```INTENT(INPLACE)``` and many more, I was able to make it work. 
 
+I also added mid-P correction (see [this document](http://www.biddle.com/documents/AIToolkit_Important_08-2010.pdf), [this one](http://www.sheffield.ac.uk/polopoly_fs/1.43998!/file/tutorial-9-fishers.pdf)and [Lydersen, Fagerland and Laake, 2009](http://onlinelibrary.wiley.com/doi/10.1002/sim.3531/epdf) for reference), which is not present in R. 
+
 The source code is available here : https://github.com/maclandrol/FisherExact.
 
 
