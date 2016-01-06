@@ -187,7 +187,7 @@ The source code is available here : https://github.com/maclandrol/FisherExact.
   </table>
 
 
-As expected, we have the same p-values for 2x2 table (here the scipy fisher_exact is used) and for tables larger than 2x2 with the default parameters. For the simulated p-value, R doesn't offer a seed option, so it's difficult the two p-values, but I think it's working because, even after several runs, the results were always consistent.
+As expected, we have the same p-values for 2x2 table (here the scipy fisher_exact is used) and for tables larger than 2x2 with the default parameters. ~For the simulated p-value, R doesn't offer a seed option, so it's difficult to compare the two p-values, but I think it's working because, even after several runs, the results were always consistent.~
 In hybrid mode, an approximation based upon asymptotic chi-squared probabilities is used instead of Fisher exact test probabilities. You can set some arguments in FEXACT (```expect=5.0, percnt=80.0 and emin=1.0```), to obtain the **'Cochran'** condition. In R's source code, ```percnt=180.0``` is used instead : 
   
 {% highlight R %}
