@@ -416,16 +416,14 @@ a.sidebar-nav-item:focus {
           transform: translateX(14rem);
 }
 
-/*
- * Comments
- */
+ /*
+  * Comments
+  */
 
 .g-commentcount{
-    font-family: "PT Serif", Georgia, "Times New Roman", serif;
-    font-size: 1em;
+    color: #303030;
+
 }
-
-
 
 /*
  * Posts and pages

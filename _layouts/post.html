@@ -5,8 +5,8 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <p class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}</p>
-  <span class="post-date">{{ page.date | date_to_string }}</span><br>
-  {% if page.comments %}<a class="g-commentcount" data-href="{{site.baseurl}}/{{page.url}}" href="{{ site.url }}{{ page.url }}#google-comments"></a>{% endif %}
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {% if page.comments %}<span class="g-commentcount" data-href="{{site.baseurl}}/{{page.url}}"></span>{% endif %}</br>
   {{ content }}
 </div>
 <div class="related">
