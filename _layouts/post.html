@@ -6,7 +6,7 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <p class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}</p>
   <span class="post-date">{{ page.date | date_to_string }}</span>
-  {% if page.comments %}<a href="{{ site.url }}{{ page.url }}#google-comments"><span class="g-commentcount" data-href="{{site.baseurl}}/{{page.url}}"</span></a>{% endif %}
+  {% if page.comments %}<a href="{{ site.url }}{{ page.url }}#google-comments">(<span class="g-commentcount" data-href="{{site.baseurl}}/{{page.url}}"></span>)</a>{% endif %}
   {{ content }}
 </div>
 <div class="related">
