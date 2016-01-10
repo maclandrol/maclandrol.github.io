@@ -1,20 +1,20 @@
 ---
 layout: post
 date: 2016-01-09
-title: "Why you should use ete for tree exploration and visualisation in python"
+title: "Why you should use ete for tree exploration and visualisation in python !"
 tags:
     - python
     - notebook
     - phylogenetics
 ---
 
-If you work with trees (be it phylogenetics or not) and you regularly use python, you have probably used or heard about one of the following packages: [Bio.phylo](https://github.com/biopython/biopython/tree/master/Bio/Phylo), [dendropy](https://pythonhosted.org/DendroPy/) and [ete](etetoolkit.org). 
+If you work with trees (be it phylogenetics or not) and you regularly use python, you have probably used or heard about one of the following packages: [Bio.phylo](https://github.com/biopython/biopython/tree/master/Bio/Phylo), [dendropy](https://pythonhosted.org/DendroPy/) and [ETE](etetoolkit.org). 
 
 While each one of those packages has its own unique strengths and weaknesses, I particulary like the **ETE** module. Here is why !
 
 <!--more-->
 
-This post is based on one of my past presentation at [monbug](http://www.monbug.ca/). The github repository with all the file can be found here : [https://github.com/maclandrol/monbug_ete](https://github.com/maclandrol/monbug_ete). You could use [nbviewer](http://nbviewer.ipython.org/github/maclandrol/monbug_ete/blob/master/mon_bug_sep3.ipynb) to view the notebook if you prefer.
+This post is based on one of my past presentation at [monbug](http://www.monbug.ca/). I actually convert the ipython notebook to this markdown with nbconvert as described by [Christopher S. Corley on his blog](http://christop.club/2014/02/21/blogging-with-ipython-and-jekyll/). The config I used with nbconvert can be [found here](https://gist.github.com/ad0c4ec49be8b891d444). The github repository with all the original files for the presentation can be found here : [monbug_ete](https://github.com/maclandrol/monbug_ete). You can use [nbviewer](http://nbviewer.ipython.org/github/maclandrol/monbug_ete/blob/master/mon_bug_sep3.ipynb) to view the notebook directly if you prefer.
 
 ### What's ETE ??
 ETE is a python **E**nvironment for **T**ree **E**xploration created by [Jaime Huerta-Cepas](https://github.com/jhcepas).
@@ -23,14 +23,14 @@ It's a framework that assists in the manipulation of any type of hierarchical tr
 
 ### Installation 
 
-You can install ETE simply by using pip : ```pip install ete3```. Check this link for more details about optionnal/unmet dependencies : [http://etetoolkit.org/download/](http://etetoolkit.org/download/)
+You can install ETE simply by using pip : ```pip install ete3```. Check this link for more details about optional/unmet dependencies : [http://etetoolkit.org/download/](http://etetoolkit.org/download/)
 
 
 ### Quick introduction to the API 
 
-A great in-depth tutorial for working with tree data structure in ete is provided by the author here : [http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html](http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html)
+A great in-depth tutorial for working with tree data structure in ETE is provided by the author here : [http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html](http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html). I'm going to make a light introduction to the API here, but I really recommend you to read the official doc! 
 
-I'll be making a light introduction to the API here, but I really recommend you to read the official doc! Let's take a quick glance at the available tree data structure in ete : 
+Let's take a quick glance at the available tree data structure in ete : 
 
 **In [58]:**
 
@@ -43,9 +43,9 @@ print([x[0] for x in inspect.getmembers(ete3, inspect.isclass) if x[0].endswith(
 
     ['ClusterTree', 'EvolTree', 'NexmlTree', 'PhyloTree', 'PhyloxmlTree', 'Tree']
 
-As you can see, you have a basic tree data structure (```Tree```) and more specific tree structures like ```PhyloTree``` for __phylogenetics__
+As you can see, you have a basic tree data structure (```Tree```) and more specialized tree structures, like ```PhyloTree``` for _phylogenetics_
 
-#### ETE can read tree from a string or a file 
+#### => ETE can read tree from a string or a file 
 
 **In [59]:**
 
@@ -63,12 +63,12 @@ t2 = Tree(rand_tree)
 
 {% endhighlight %}
  
-#### In ete, a tree is a Node. This implies that the treeroot is a Node, so are all its descendents.
+#### => In ete, a tree is a Node. This implies that the treeroot is a Node, so are all its descendents.
 
 **In [61]:**
 
 {% highlight python %}
-print(t2)
+print(t1)
 {% endhighlight %}
 
     
@@ -85,7 +85,7 @@ print(t2)
           \-f
 
  
-#### You can add informations to nodes by adding features
+#### => You can add information to nodes by adding features
 
 The following code will traverse the tree ```t1``` and add a feature ```sexiness``` to each leaf.
 **In [62]:**
@@ -101,7 +101,7 @@ for node in t1.traverse("levelorder"):
         node.add_features(sexiness=node_rand)
 {% endhighlight %}
  
-#### Features are just attributes
+#### => Features are just attributes
 
 **In [63]:**
 
@@ -126,7 +126,7 @@ print(t1.get_ascii(attributes=['name', 'sexiness']))
     
 
  
-#### You can search by features 
+#### => You can search by features 
 
 **In [64]:**
 
@@ -140,7 +140,7 @@ print(t1.search_nodes(name='a'))
     [Tree node 'a' (-0x7ffff810443aa570)]
     [Tree node 'a' (-0x7ffff810443aa570)]
  
-#### A quick list of useful functions 
+#### => Here is a quick list of useful functions 
 
 **In [65]:**
 
@@ -204,14 +204,12 @@ print(rf[0])
 {% endhighlight %}
 
     
-    
     RF DISTANCE between t1 and t2 :
     0
 
  
-### Introduction to tree visualization  with ete
+### Introduction to tree visualization with ete
  
-#### Example 1 : simple tree visualisation
 
 Data : a random tree with random branches
 
@@ -233,24 +231,24 @@ print(t.get_ascii(attributes=['name', 'support'], show_internal=True))
 {% endhighlight %}
 
     
-                       /-G, 0.479360923
-         /, 0.113194582
-        |             |              /-F, 0.534038254
-        |              \, 0.520949167
-    -, 1.0                           \-E, 0.898220704
+                   /-G, 0.47936
+         /, 0.11319
+        |         |          /-F, 0.53403
+        |          \, 0.52094
+    -, 1.0                   \-E, 0.89822
         |
-        |              /-L, 0.2768295431285249
-         \, 0.326206205
-                      |              /-K, 0.501735122
-                       \, 0.073205243
-                                    |              /-J, 0.142080170
-                                     \, 0.931415565
-                                                  |              /-I, 0.055557215
-                                                   \, 0.875123316
-                                                                 \-H, 0.8108877272
+        |          /-L, 0.27682
+         \, 0.32620
+                  |          /-K, 0.50173
+                   \, 0.07320
+                            |          /-J, 0.14208
+                             \, 0.93141
+                                      |         /-I, 0.05555
+                                       \, 0.87512
+                                                \-H, 0.81088
 
  
-#### Render tree (supported format : png, pdf and svg) 
+#### => Trees can be saved as images. Supported format are png, pdf and svg.
 
 **In [74]:**
 
@@ -265,7 +263,7 @@ t.render('tree.png', dpi=200)
 
 
  
-#### Use styles to change how the tree is displayed
+#### => You can use ```TreeStyle``` to change how the tree is displayed
 
 
 **In [75]:**
@@ -304,7 +302,7 @@ t.render('tree3.png', tree_style=ts, w=500)
 
 
  
-#### The wonder of ```faces``` 
+#### => ```faces``` are wonderful
 
 ```faces``` allow you to add graphical informations to a node. It can be a simple Text, an Image or a more useful information like a Chart or a Sequence domains. 
 
@@ -330,7 +328,7 @@ With Faces, you can actually make things like this (treeception) :
 
 ![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_36_0.png) 
 
-It's also possible to define a layout function that will specify how a node will be rendered. Let's see how to do that and in which cases this could be useful with the next exemple.
+It's also possible to define a layout function that will determine how a node will be rendered. Let's see how to do that and in which cases this could be useful with the next exemple.
 
 ### Application 1 : Duplication|Loss history of a gene familly
 
