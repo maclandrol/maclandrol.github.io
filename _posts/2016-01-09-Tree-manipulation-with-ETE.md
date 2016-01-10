@@ -6,9 +6,9 @@ tags: [phylogenetics, python, tree, en]
 comments : true
 ---
 
-If you work with trees (be it phylogenetics or not) and you regularly use python, you have probably used or heard about one of the following packages: [Bio.phylo](https://github.com/biopython/biopython/tree/master/Bio/Phylo), [dendropy](https://pythonhosted.org/DendroPy/) and [ETE](etetoolkit.org). 
+If you work with trees (phylogenetics or not) and you regularly use python, you have probably used or heard about one of the following packages: [Bio.phylo](https://github.com/biopython/biopython/tree/master/Bio/Phylo), [dendropy](https://pythonhosted.org/DendroPy/) or [ETE](etetoolkit.org). 
 
-While each one of those packages has its own unique strengths and weaknesses, I particulary like the **ETE** module. Here is why !
+While each one of those packages has its own unique strengths and weaknesses, I particularly like the **ETE** module. Here is why !
 
 <!--more-->
 
@@ -17,16 +17,16 @@ This post is based on one of my past presentation at [monbug](http://www.monbug.
 ### What's ETE ??
 ETE is a python **E**nvironment for **T**ree **E**xploration created by [Jaime Huerta-Cepas](https://github.com/jhcepas).
 
-It's a framework that assists in the manipulation of any type of hierarchical tree (ie reading, writing, visualisation, annotation, etc). The current latest version is [```ete3```](https://github.com/jhcepas/ete).
+It's a framework that assists in the manipulation of any type of hierarchical tree (ie reading, writing, visualisation, annotation, etc). The current latest version is [**ete3**](https://github.com/jhcepas/ete).
 
 ### Installation 
 
-You can install ETE simply by using pip : ```pip install ete3```. Check this link for more details about optional/unmet dependencies : [http://etetoolkit.org/download/](http://etetoolkit.org/download/)
+You can install ETE with pip : ```pip install ete3```. Check this link for more details about optional/unmet dependencies : [http://etetoolkit.org/download/](http://etetoolkit.org/download/)
 
 
 ### Quick introduction to the API 
 
-A great in-depth tutorial for working with tree data structure in ETE is provided by the author here : [http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html](http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html). I'm going to make a light introduction to the API here, but I really recommend you to read the official doc! 
+A great in-depth tutorial for working with tree data structure in ETE is provided by the author : [http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html](http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html). I'm going to make a light introduction to the API here, but I really recommend you to read the official doc! 
 
 Let's take a quick glance at the available tree data structure in ete : 
 
