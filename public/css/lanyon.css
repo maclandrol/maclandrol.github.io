@@ -416,14 +416,6 @@ a.sidebar-nav-item:focus {
           transform: translateX(14rem);
 }
 
- /*
-  * Comments
-  */
-
-.g-commentcount{
-    color: #303030;
-
-}
 
 /*
  * Posts and pages
