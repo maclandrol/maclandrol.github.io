@@ -5,11 +5,13 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
+  <p class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %} &bull; {% endunless %}{% endfor %}</p>
+  {% if page.comments %}<p><a href="{{ site.url }}{{ page.url }}#google-comments" data-href="{{site.baseurl}}/{{page.url}}">Comments</a></p>{% endif %}
   {{ content }}
 </div>
 
 <div class="related">
-  <h2>Related Posts</h2>
+  <h2>Recent Posts</h2>
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
       <li>
@@ -23,4 +25,7 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+{% if page.comments %}
 {% include comments.html %}
+{% endif %}

@@ -2,7 +2,8 @@
 layout: post
 title:  "Fisher's Exact test for mxn contingency table"
 date:   2016-01-03
-tag: stat, python
+tags: [statistics, python, en]
+comments : true
 ---
 
 

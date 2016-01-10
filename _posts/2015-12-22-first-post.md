@@ -2,7 +2,8 @@
 layout: post
 title:  "First Post"
 date:   2015-12-22
-tag: en
+tags: [en]
+comments : true
 ---
 
 2016 is near, and like any new year it comes with taking new resolutions. 
