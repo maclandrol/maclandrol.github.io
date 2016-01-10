@@ -27,7 +27,7 @@ layout: default
 {% if page.comments %}
 {% include comments.html %}
 <script>
-var g = $('#test').contents().find('body');
+var g = document.getElementById('frame').contentDocument.body;
 console.log(g);
 </script>
 {% endif %}
