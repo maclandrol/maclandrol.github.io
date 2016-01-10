@@ -10,25 +10,25 @@ tags:
 
 If you work with trees (be it phylogenetics or not) and you regularly use python, you have probably used or heard about one of the following packages: [Bio.phylo](https://github.com/biopython/biopython/tree/master/Bio/Phylo), [dendropy](https://pythonhosted.org/DendroPy/) and [ete](etetoolkit.org). 
 
-While each one of those packages has its own unique strengths and weaknesses., I particulary like the **ETE** module. Here is why !
+While each one of those packages has its own unique strengths and weaknesses, I particulary like the **ETE** module. Here is why !
 
 <!--more-->
 
-This post is based on one of my past presentation at [monbug](http://www.monbug.ca/). The github repository with all the file can be found here : https://github.com/maclandrol/monbug_ete . You could use [nbviewer](http://nbviewer.ipython.org/github/maclandrol/monbug_ete/blob/master/mon_bug_sep3.ipynb) to view the notebook if you prefer.
+This post is based on one of my past presentation at [monbug](http://www.monbug.ca/). The github repository with all the file can be found here : [https://github.com/maclandrol/monbug_ete](https://github.com/maclandrol/monbug_ete). You could use [nbviewer](http://nbviewer.ipython.org/github/maclandrol/monbug_ete/blob/master/mon_bug_sep3.ipynb) to view the notebook if you prefer.
 
 ### What's ETE ??
-ETE is a python **E**nvironment for **T**ree **E**xploration created by _Jaime Huerta-Cepas_.
+ETE is a python **E**nvironment for **T**ree **E**xploration created by [Jaime Huerta-Cepas](https://github.com/jhcepas).
 
-It's a framework that assists in the manipulation of any type of hierarchical tree (this include reading, writing, visualisation, annotation, etc). The current version is ```ete3```
+It's a framework that assists in the manipulation of any type of hierarchical tree (ie reading, writing, visualisation, annotation, etc). The current latest version is [```ete3```](https://github.com/jhcepas/ete).
 
 ### Installation 
 
-You can install ETE simply by using pip : ```pip install ete3```. Check this link for more detail about optionnal/unmet dependencies : http://etetoolkit.org/download/
+You can install ETE simply by using pip : ```pip install ete3```. Check this link for more details about optionnal/unmet dependencies : [http://etetoolkit.org/download/](http://etetoolkit.org/download/)
 
 
 ### Quick introduction to the API 
 
-A great in-depth tutorial for working with tree data structure in ete is provided by the author here : http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html 
+A great in-depth tutorial for working with tree data structure in ete is provided by the author here : [http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html](http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html)
 
 I'll be making a light introduction to the API here, but I really recommend you to read the official doc! Let's take a quick glance at the available tree data structure in ete : 
 
@@ -45,7 +45,7 @@ print([x[0] for x in inspect.getmembers(ete3, inspect.isclass) if x[0].endswith(
 
 As you can see, you have a basic tree data structure (```Tree```) and more specific tree structures like ```PhyloTree``` for __phylogenetics__
 
-#### ETE can read tree from a str or a file 
+#### ETE can read tree from a string or a file 
 
 **In [59]:**
 
@@ -58,20 +58,16 @@ with open(rand_tree, 'w') as TREE:
     TREE.write(rand_newick)
 
 # Reading tree t1 and t2
-# FILL HERE
 t1 = Tree(rand_newick)
 t2 = Tree(rand_tree)
 
 {% endhighlight %}
  
-
-#### A tree is a Node ===> the root is a Node, so are all its descendents 
+#### In ete, a tree is a Node. This implies that the treeroot is a Node, so are all its descendents.
 
 **In [61]:**
 
 {% highlight python %}
-# Print t1 then t2 in ASCII
-print(t1.get_ascii())
 print(t2)
 {% endhighlight %}
 
@@ -87,26 +83,14 @@ print(t2)
       |   /-e
        \-|
           \-f
-    
-                /-a
-             /-|
-          /-|   \-b
-         |  |
-       /-|   \-c
-      |  |
-    --|   \-d
-      |
-      |   /-e
-       \-|
-          \-f
 
  
-### You can add features to nodes 
+#### You can add informations to nodes by adding features
 
+The following code will traverse the tree ```t1``` and add a feature ```sexiness``` to each leaf.
 **In [62]:**
 
 {% highlight python %}
-# Traverse tree t1 and add a feature at internal_node
 from numpy import random
 
 # Traverse : levelorder, preorder, postorder
@@ -114,24 +98,16 @@ for node in t1.traverse("levelorder"):
     if node.is_leaf():
         # add a features : randomness
         node_rand = random.randint(10)
-        # FILL CODE
-        node.add_features(randomness=node_rand)
+        node.add_features(sexiness=node_rand)
 {% endhighlight %}
  
-### Features are just attributes
- 
+#### Features are just attributes
 
 **In [63]:**
 
 {% highlight python %}
-# print t1 again with features : name and randomness
-print(t1.get_ascii(attributes=['name', 'randomness']))
-
-# Iterate over all the leaves
-# t1.iter_leaves()
-print("\n")
-for node in t1:
-    print("%s\t%s"%(node.name, node.randomness))
+# print t1 again with features : name and sexiness
+print(t1.get_ascii(attributes=['name', 'sexiness']))
 
 {% endhighlight %}
 
@@ -148,89 +124,47 @@ for node in t1:
        \-|
           \-f, 3
     
-    
-    a	8
-    b	1
-    c	9
-    d	3
-    e	9
-    f	3
 
  
-### You can search by features 
+#### You can search by features 
 
 **In [64]:**
 
 {% highlight python %}
 # search by features
-print(t1.search_nodes(randomness=8))
+print(t1.search_nodes(sexiness=8))
 print(t1.search_nodes(name='a'))
 
-# shortcut for node name :)
-t1&'a'
 {% endhighlight %}
 
     [Tree node 'a' (-0x7ffff810443aa570)]
     [Tree node 'a' (-0x7ffff810443aa570)]
-
-    Tree node 'a' (-0x7ffff810443aa570)
-
-
  
-### A quick list of useful methods 
+#### A quick list of useful functions 
 
 **In [65]:**
 
 {% highlight python %}
-print(t1)
 # get sister node =====> get_sisters()
 sister = (t1&'a').get_sisters()
-print("\nSISTER a : ")
+print("\nSISTERS of  a : ")
 print(sister)
 
 {% endhighlight %}
-
     
-                /-a
-             /-|
-          /-|   \-b
-         |  |
-       /-|   \-c
-      |  |
-    --|   \-d
-      |
-      |   /-e
-       \-|
-          \-f
-    
-    SISTER a : 
+    SISTERS of a : 
     [Tree node 'b' (0x7efbbc55ab0)]
 
 
 **In [66]:**
 
 {% highlight python %}
-print(t1)
-# get children  ===< get_children()
+# get children  =====> get_children()
 root_children = t1.get_children()
 print("\n\nFIRST CHILD OF ROOT")
 print(root_children[0])
 {% endhighlight %}
 
-    
-                /-a
-             /-|
-          /-|   \-b
-         |  |
-       /-|   \-c
-      |  |
-    --|   \-d
-      |
-      |   /-e
-       \-|
-          \-f
-    
-    
     FIRST CHILD OF ROOT
     
              /-a
@@ -245,27 +179,13 @@ print(root_children[0])
 **In [67]:**
 
 {% highlight python %}
-print(t1)
-# Get LCA of multiple node ===> get_common_ancestor()
+# Get the  LCA (Latest Common Ancestor) of multiple node ====> get_common_ancestor()
 lca = t1.get_common_ancestor(['a', 'b'])
 print("\n\nLCA (a, b) : ")
 print(lca)
 {% endhighlight %}
-
     
-                /-a
-             /-|
-          /-|   \-b
-         |  |
-       /-|   \-c
-      |  |
-    --|   \-d
-      |
-      |   /-e
-       \-|
-          \-f
-    
-    
+   
     LCA (a, b) : 
     
        /-a
@@ -276,8 +196,8 @@ print(lca)
 **In [68]:**
 
 {% highlight python %}
-# RF distance
-# t1 and t2 were the same tree ... 
+# RF (Robinson-Foulds) distance between t1 and t2.
+# Recall that t1 and t2 have the same newick ...
 rf = t1.robinson_foulds(t2)
 print("\n\nRF DISTANCE between t1 and t2 :")
 print(rf[0])
@@ -288,57 +208,10 @@ print(rf[0])
     RF DISTANCE between t1 and t2 :
     0
 
-
-**In [69]:**
-
-{% highlight python %}
-# prune tree to list of leaf: ===> prune
-leaf_to_keep = ['a', 'c', 'd', 'f']
-print("\n\nPRUNE t1 to [%s]"%", ".join(leaf_to_keep))
-print("\n\nBEFORE PRUNING : ")
-print(t1)
-
-# FILL CODE
-t1.prune(leaf_to_keep)
-
-print("\n\nAFTER PRUNING : ")
-print(t1)
-{% endhighlight %}
-
-    
-    
-    PRUNE t1 to [a, c, d, f]
-    
-    
-    BEFORE PRUNING : 
-    
-                /-a
-             /-|
-          /-|   \-b
-         |  |
-       /-|   \-c
-      |  |
-    --|   \-d
-      |
-      |   /-e
-       \-|
-          \-f
-    
-    
-    AFTER PRUNING : 
-    
-             /-c
-          /-|
-       /-|   \-a
-      |  |
-    --|   \-d
-      |
-       \-f
-
  
-## PART 2 : Visualization 
+### Introduction to tree visualization  with ete
  
-### Example 1 : simple tree visualisation
+#### Example 1 : simple tree visualisation
 
 Data : a random tree with random branches
 
@@ -360,104 +233,82 @@ print(t.get_ascii(attributes=['name', 'support'], show_internal=True))
 {% endhighlight %}
 
     
-                              /-G, 0.4793609239053189
-         /, 0.11319458200540156
-        |                    |                   /-F, 0.5340382546548448
-        |                     \, 0.520949167241861
-    -, 1.0                                       \-E, 0.8982207041579878
+                       /-G, 0.479360923
+         /, 0.113194582
+        |             |              /-F, 0.534038254
+        |              \, 0.520949167
+    -, 1.0                           \-E, 0.898220704
         |
-        |                     /-L, 0.2768295431285249
-         \, 0.32620620577540727
-                             |                     /-K, 0.5017351222348678
-                              \, 0.07320524397375128
-                                                  |                   /-J, 0.1420801709839633
-                                                   \, 0.931415565866013
-                                                                     |                   /-I, 0.05555721516881551
-                                                                      \, 0.875123316663256
-                                                                                         \-H, 0.8108877272041851
+        |              /-L, 0.2768295431285249
+         \, 0.326206205
+                      |              /-K, 0.501735122
+                       \, 0.073205243
+                                    |              /-J, 0.142080170
+                                     \, 0.931415565
+                                                  |              /-I, 0.055557215
+                                                   \, 0.875123316
+                                                                 \-H, 0.8108877272
 
  
-### Show tree in a gui
- 
-
-**In [72]:**
-
-{% highlight python %}
-
-t.show()
-{% endhighlight %}
- 
-### Render tree (supported format : png, pdf and svg)
-### Notebook support !!!!
- 
+#### Render tree (supported format : png, pdf and svg) 
 
 **In [74]:**
 
 {% highlight python %}
-from IPython.display import Image
 
-# render tree (supported format : png, pdf and svg)
-#t.render('tree.png', dpi=200)
-#Image('tree.png')
+t.render('tree.png', dpi=200)
 
-# render and show directly in the notebook
-# FILL CODE
-t.render('%%inline', dpi=200)
 {% endhighlight %}
-
-
 
  
 ![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_29_0.png) 
 
 
  
-### ==> This is what make ETE different 
+#### Use styles to change how the tree is displayed
+
 
 **In [75]:**
 
 {% highlight python %}
-# TreeStyle to change the display options
 
 from ete3 import TreeStyle
 
 ts = TreeStyle()
-
 ts.show_branch_length = True # show branch length
 ts.show_branch_support = True # show support
 
-# rotate  tree
+# rotate the tree by 30 degree
 ts.rotation = -30
-t.render('%%inline', tree_style=ts)
+t.render('tree2.png', tree_style=ts)
 {% endhighlight %}
-
-
 
  
 ![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_31_0.png) 
 
 
+Let's draw a circular tree now
 
 **In [76]:**
 
 {% highlight python %}
-# Draw a circular tree
-
 ts.rotation = 0
-ts.mode = "c" #circular mode (default = 'r' for rectangular ?)
-ts.arc_start = -180 # 0 degrees = 3 o'clock
+ts.mode = "c" # use circular mode 
+ts.arc_start = -180 
 ts.arc_span = 180
-t.render('%%inline', tree_style=ts, w=500)
+t.render('tree3.png', tree_style=ts, w=500)
 {% endhighlight %}
-
-
 
  
 ![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_32_0.png) 
 
 
  
-### The wonder of  "faces'' 
+#### The wonder of ```faces``` 
+
+```faces``` allow you to add graphical informations to a node. It can be a simple Text, an Image or a more useful information like a Chart or a Sequence domains. 
+
+Here is the list of available faces : 
 
 **In [77]:**
 
@@ -471,64 +322,22 @@ Image('face_positions.png')
     ['AttrFace', 'BarChartFace', 'CircleFace', 'DynamicItemFace', 'Face', 'ImgFace', 'OLD_SequenceFace', 'PieChartFace', 'ProfileFace', 'RandomFace', 'RectFace', 'SeqMotifFace', 'SequenceFace', 'SequencePlotFace', 'StackedBarFace', 'StaticItemFace', 'TextFace', 'TreeFace']
 
 
-
-
+Faces can be added at different areas around a node.
  
 ![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_34_1.png) 
 
+With Faces, you can actually make things like this (treeception) :
 
-
-**In [78]:**
-
-{% highlight python %}
-# Adding a Circleface to our current tree
-
-def layout(node):
-    if node.is_leaf():
-     
-        # Create a sphere face with a random size
-        C = faces.CircleFace(radius=random.randint(5, 50), color="RoyalBlue", style="sphere")
-        
-        # Make it transparent 
-        C.opacity = 0.3
-       
-        # And place as a float face over the tree
-        faces.add_face_to_node(C, node, 0, position="float")
-
-# link out layout to the style
-ts.layout_fn = layout
-
-#show
-t.render('%%inline', tree_style=ts, w=700)
-{% endhighlight %}
-
-
-
- 
-![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_35_0.png) 
-
-
-
-**In [79]:**
-
-{% highlight python %}
-# With Face, You can actually make things like this : (treeception)
-Image('tree_faces.png')
-{% endhighlight %}
-
-
-
- 
 ![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_36_0.png) 
 
+It's also possible to define a layout function that will specify how a node will be rendered. Let's see how to do that and in which cases this could be useful with the next exemple.
 
- 
-### Example 2 : Duplication|Loss history of a gene familly
+### Application 1 : Duplication|Loss history of a gene familly
 
-Data : genetree newick where I already add a feature (**state**), where :
+Data : genetree newick where I have already added a feature (**state**) :
 
 - states = 1 ==> internal node with duplication
-- states = 0 ==> speciation node
+- states = 0 ==> internal node with speciation
  
 
 **In [80]:**
@@ -559,10 +368,8 @@ import utils
 
 # Creates a layout function
 def mylayout(node):
-    # If node is a leaf, its scientific name
     if node.is_leaf():
-       
-        # add a face for scientific name
+        # add a face for its scientific name
         longNameFace = faces.TextFace(utils.get_scientific_name(node))
         faces.add_face_to_node(longNameFace, node, column=1)
 
@@ -571,37 +378,36 @@ def mylayout(node):
         image = utils.get_image(node.name)
         faces.add_face_to_node(faces.ImgFace(image), node, column=0, aligned=True)
     
-    #If node is an internal node
+    # If node is an duplication node
     elif int(node.states) == 1:
-        # Sets the style of internal nodes
+        # Sets the style as a green square
         node.img_style["size"] = 6
         node.img_style["shape"] = "square"
         node.img_style["fgcolor"] = "green"
+
+    # If node is a speciation node
     else :
-        # Sets the style of internal nodes
+        # Sets the style as a red circle
         node.img_style["size"] = 6
         node.img_style["shape"] = "circle"
         node.img_style["fgcolor"] = "red"
         
 
-# And, finally, display the tree using my own layout function
+# And, finally, display the tree using the layout function
 ts = TreeStyle()
 ts.show_leaf_name = False
 ts.layout_fn = mylayout
 
 t.render("%%inline", dpi=600, tree_style = ts)
 
-
 {% endhighlight %}
 
 
-
- 
 ![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_39_0.png) 
 
 
  
-### Example 3 : Phylogenetic tree, sequence and information content
+### Application 2 : Phylogenetic tree, protein sequence and information content
 
 Data :
     - An alignment
@@ -636,6 +442,7 @@ show_file(tree)
     MAEIPDATIQ----LTNVSHNIAVQYLSEFGDLNEALNSY
     >D
     MAEAPDETIQQFMALTNVSHNIAVQYLSEFGDLNEAL---
+    
     (A,(D,(B,C)));
 
 
@@ -663,26 +470,8 @@ ts.aligned_header.add_face(ic_plot, 1)
 t.render("%%inline", tree_style=ts, dpi=300)
 {% endhighlight %}
 
-
-
  
 ![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_42_0.png) 
 
 
- 
-## THANKS
-
-- you'll find the notebook here : http://nbviewer.ipython.org/github/maclandrol/
-monbug_ete/blob/master/mon_bug_sep3.ipynb
-
-- and the associated github repo here : https://github.com/maclandrol/monbug_ete
-
-- ETE toolkit : http://etetoolkit.org/
-
-- If you want to contribute (Cepas github repo): https://github.com/jhcepas/ete 
-
-**In [None]:**
-
-{% highlight python %}
-
-{% endhighlight %}
+You can do a lot of thing with ete if you take the time to learn how to use it. I didn't have time to talk about ```ClusterNode```, ```EvolNode``` or other great modules of ete, but I hope this post spark your interest  and was useful to you. Also, [READ THE DOCS](http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html).
