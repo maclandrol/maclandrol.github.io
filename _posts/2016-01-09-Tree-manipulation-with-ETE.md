@@ -212,9 +212,8 @@ print(rf[0])
  
 
 Data : a random tree with random branches
-
-- Tree rendering
-- Tree Style
+ * Tree rendering
+ * Tree Style
  
 
 **In [71]:**
@@ -332,7 +331,7 @@ It's also possible to define a layout function that will determine how a node wi
 
 ### Application 1 : Duplication|Loss history of a gene familly
 
-Data : genetree newick where I have already added a feature (**state**) :
+Data : genetree newick where I have already added a feature (**states**) :
 
 - states = 1 ==> internal node with duplication
 - states = 0 ==> internal node with speciation
@@ -376,16 +375,16 @@ def mylayout(node):
         image = utils.get_image(node.name)
         faces.add_face_to_node(faces.ImgFace(image), node, column=0, aligned=True)
     
-    # If node is an duplication node
+    # If node is a duplication node
     elif int(node.states) == 1:
-        # Sets the style as a green square
+        # Set the style as a green square
         node.img_style["size"] = 6
         node.img_style["shape"] = "square"
         node.img_style["fgcolor"] = "green"
 
     # If node is a speciation node
     else :
-        # Sets the style as a red circle
+        # Set the style as a red circle
         node.img_style["size"] = 6
         node.img_style["shape"] = "circle"
         node.img_style["fgcolor"] = "red"
@@ -396,7 +395,7 @@ ts = TreeStyle()
 ts.show_leaf_name = False
 ts.layout_fn = mylayout
 
-t.render("%%inline", dpi=600, tree_style = ts)
+t.render("tree4.png", dpi=600, tree_style = ts)
 
 {% endhighlight %}
 
@@ -408,9 +407,9 @@ t.render("%%inline", dpi=600, tree_style = ts)
 ### Application 2 : Phylogenetic tree, protein sequence and information content
 
 Data :
-    - An alignment
-    - A tree constructed using that alignment
-    (Actually those two were randomly generated)
+ * An alignment
+ * A tree constructed using that alignment
+(Actually those two were randomly generated)
  
 
 **In [82]:**
@@ -472,4 +471,7 @@ t.render("%%inline", tree_style=ts, dpi=300)
 ![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_42_0.png) 
 
 
-You can do a lot of thing with ete if you take the time to learn how to use it. I didn't have time to talk about ```ClusterNode```, ```EvolNode``` or other great modules of ete, but I hope this post spark your interest  and was useful to you. Also, [READ THE DOCS](http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html).
+
+You can do a lot of thing with ete if you take the time to learn how to use it. I didn't have time to talk about ```ClusterNode```, ```EvolNode``` or all the other great modules of ete, but I hope this post spark your interest and was useful to you. 
+
+Also, [READ THE DOCS](http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html).
