@@ -7,7 +7,7 @@ comments : true
 ---
 
 
-I was working on a project where I needed to compare categorical data in other to determine if there is any association between them. For my particular problem, a chi2 test wouldn't work, so I needed a Fisher's exact test. Since there aren't any code in python to perform the Fisher's exact test for larger than 2x2 table, I decided to write my own. You can find it here : [FisherExact](https://github.com/maclandrol/FisherExact).
+I was working on a project where I needed to compare categorical data in order to determine if there is any association between them. For my particular problem, a chi2 test wouldn't work, so I needed a Fisher's exact test. Since there aren't any code in python to perform the Fisher's exact test for larger than 2x2 table, I decided to write my own. You can find it here : [FisherExact](https://github.com/maclandrol/FisherExact).
 <!--more-->
 
 Usually, you would use a chi2 test for independence (which is implemented in most programming languages) to compare association between categorical data. The problem was that I had low count in my contingency table.
