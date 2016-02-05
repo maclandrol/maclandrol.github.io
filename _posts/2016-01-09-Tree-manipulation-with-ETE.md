@@ -99,7 +99,7 @@ for node in t1.traverse("levelorder"):
         node.add_features(sexiness=node_rand)
 {% endhighlight %}
  
-#### => Features are just attributes
+#### => Features are just attributes.
 
 **In [63]:**
 
@@ -325,7 +325,7 @@ With Faces, you can actually make things like this (treeception) :
 
 ![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_36_0.png) 
 
-It's also possible to define a layout function that will determine how a node will be rendered. Let's see how to do that and in which cases this could be useful with the next exemple.
+It's also possible to define a layout function that will determine how a node will be rendered. Let's see how to do that and in which cases this could be useful with the next example.
 
 ### Application 1 : Duplication|Loss history of a gene familly
 
