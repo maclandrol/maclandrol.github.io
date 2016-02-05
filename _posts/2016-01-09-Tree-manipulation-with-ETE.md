@@ -405,8 +405,8 @@ t.render("tree4.png", dpi=600, tree_style = ts)
 ### Application 2 : Phylogenetic tree, protein sequence and information content
 
 Data :
- * An alignment
- * A tree constructed using that alignment
+ - An alignment
+ - A tree constructed using that alignment
 (Actually those two were randomly generated)
  
 
