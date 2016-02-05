@@ -419,13 +419,13 @@ from Bio import Alphabet
 from Bio.Align import AlignInfo
 from utils import show_file
 
-alignement = "alignement.fasta"
+alignment = "alignment.fasta"
 tree = "phylotree.nw"
 
-# Open tree and link alignement to it
+# Open tree and link alignment to it
 t = PhyloNode(tree)
-t.link_to_alignment(alignement)
-show_file(alignement)
+t.link_to_alignment(alignment)
+show_file(alignment)
 show_file(tree)
 {% endhighlight %}
 
@@ -445,7 +445,7 @@ show_file(tree)
 
 {% highlight python %}
 # Compute Information content with Biopython
-align = AlignIO.read(alignement, 'fasta', alphabet=Alphabet.Gapped(Alphabet.IUPAC.protein))
+align = AlignIO.read(alignment, 'fasta', alphabet=Alphabet.Gapped(Alphabet.IUPAC.protein))
 summary_info = AlignInfo.SummaryInfo(align)        
 total_ic_content = summary_info.information_content()
 ic_content = summary_info.ic_vector.values()
