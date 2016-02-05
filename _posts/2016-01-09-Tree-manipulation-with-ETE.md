@@ -61,7 +61,7 @@ t2 = Tree(rand_tree)
 
 {% endhighlight %}
  
-#### => In ete, a tree is a Node. This implies that the treeroot is a Node, so are all its descendents.
+#### => In ete, a tree is a Node. This implies that the root is a Node, so are all its descendants.
 
 **In [61]:**
 
