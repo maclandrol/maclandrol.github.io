@@ -26,7 +26,7 @@ You can install ETE with pip : ```pip install ete3```. Check this link for more 
 
 ### Quick introduction to the API 
 
-A great in-depth tutorial for working with tree data structure in ETE is provided by the author : [http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html](http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html). I'm going to make a light introduction to the API here, but I really recommend you to read the official doc! 
+A great in-depth tutorial for working with tree data structure in ETE is provided by the authors : [http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html](http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html). I'm going to make a light introduction to the API here, but I really recommend you to read the official doc! 
 
 Let's take a quick glance at the available tree data structure in ete : 
 
