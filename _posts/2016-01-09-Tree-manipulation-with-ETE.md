@@ -86,6 +86,7 @@ print(t1)
 #### => You can add information to nodes by adding features
 
 The following code will traverse the tree ```t1``` and add a feature ```sexiness``` to each leaf.
+
 **In [62]:**
 
 {% highlight python %}
@@ -470,6 +471,6 @@ t.render("%%inline", tree_style=ts, dpi=300)
 
 
 
-You can do a lot of thing with ete if you take the time to learn how to use it. I didn't have time to talk about ```ClusterNode```, ```EvolNode``` or all the other great modules of ete, but I hope this post spark your interest and was useful to you. 
+You can do a lot of things with __ete__ if you take the time to learn how to use it. I didn't have time to talk about ```ClusterNode```, ```EvolNode``` or all the other great modules of ete, but I hope this post spark your interest and was useful to you. 
 
 Also, [READ THE DOCS](http://etetoolkit.org/docs/latest/tutorial/tutorial_trees.html).
