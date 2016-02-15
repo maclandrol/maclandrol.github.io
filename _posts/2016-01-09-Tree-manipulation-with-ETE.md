@@ -220,7 +220,7 @@ Data : a random tree with random branches
 {% highlight python %}
 from ete3 import Tree
 
-# Generate a random tree (yule process) with leaf name defined by leave_names
+# Generate a random tree (yule process)
 t = Tree()
 t.populate(8, names_library=list('ABCDEFGHIJKL'), random_branches=True)
 
