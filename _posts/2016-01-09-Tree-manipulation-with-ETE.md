@@ -302,7 +302,7 @@ t.render('tree3.png', tree_style=ts, w=500)
  
 #### => ```faces``` are wonderful
 
-```faces``` allow you to add graphical informations to a node. It can be a simple Text, an Image or a more useful information like a Chart or a Sequence domains. 
+```faces``` allow you to add graphical informations to a node. It can be a simple Text, an Image or a more useful information like a Chart or Sequence domains. 
 
 Here is the list of available faces : 
 
