@@ -246,7 +246,7 @@ print(t.get_ascii(attributes=['name', 'support'], show_internal=True))
                                                 \-H, 0.81088
 
  
-#### => Trees can be saved as images. Supported format are png, pdf and svg.
+#### => Trees can be saved as images.  Supported format are png, pdf and svg.
 
 **In [74]:**
 
