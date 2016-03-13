@@ -8,8 +8,8 @@ excerpt_separator: <!--more-->
 title:               
 tagline:             'Sharing my thoughts on bioinformatics, linux, and some boring stuff ...'
 description:         ''
-url:                 http://mrnoutahi.com
-baseurl:             'http://mrnoutahi.com'
+url:                 http://blog.mrnoutahi.com
+baseurl:             'http://blog.mrnoutahi.com'
 paginate:            5
 github_username:     maclandrol
 twitter_username:    ENoutahi

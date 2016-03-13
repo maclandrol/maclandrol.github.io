@@ -247,33 +247,34 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .sidebar-info{
-  margin-left : -1.1rem;
-  padding: .3rem .5rem;
-  margin-right : -1rem;
   border : 1px solid rgba(255,255,255,.1);
   border-color: transparent;
-
 }
 
 /*sidebar image */
 
 .sidebar-circular {
-  float : left;
-  width: 5rem;
-  height: 5rem;
-  margin-right: 0.5rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
-  background: url(/public/photo.jpg) no-repeat;
+  background: url(/public/photo2.jpg) no-repeat;
   background-size: cover;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   }
 
 .sidebar-info-text{
-  margin-top: 0.9rem;
   vertical-align: middle;
+  text-align: center;
+  margin: auto;
+  margin-top : 1em;
   height: 100%;
   width: 100%;
 }
@@ -289,7 +290,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sidebar-circular img {
-  display: block;
   opacity: 0;
   filter: alpha(opacity=0);
   }
