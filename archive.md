@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog posts
+title: Archives
 ---
 
 <ul class="post-list">

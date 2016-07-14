@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Blog posts
+title: Talks
 ---
 
 <ul class="sli-list">
