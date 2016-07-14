@@ -684,8 +684,8 @@ a.pagination-item:hover {
 }
 
 .sli-list li{
-  margin: 15px auto;
-  padding-top: 2rem;
+  margin: 10px auto;
+  padding-top: 1.2rem;
 }
 
 .infinite-spinner {
