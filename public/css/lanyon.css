@@ -682,6 +682,11 @@ a.pagination-item:hover {
 .post-list li{
   margin: 5px auto;
 }
+
+.sli-list li{
+  margin: 10px auto;
+}
+
 .infinite-spinner {
   display: block;
   width: 30px;
