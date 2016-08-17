@@ -128,7 +128,7 @@ var modify_time_period_params = {
     y_accessor: 'cand'
 }
 
-d3.json('/public/assets/data/total.json', function(data) {
+d3.json('https://mrnoutahi.com/public/assets/data/total.json', function(data) {
     
     globals.data = data; // MG.convert.date(data, 'years');
 
