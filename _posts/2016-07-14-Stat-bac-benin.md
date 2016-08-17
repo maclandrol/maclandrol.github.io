@@ -128,7 +128,7 @@ var modify_time_period_params = {
     y_accessor: 'cand'
 }
 
-var url = window.location.protocol + '//public/assets/data/total.json'
+var url = window.location.protocol + '//mrnoutahi.com/public/assets/data/total.json'
 
 
 d3.json(url, function(data) {
