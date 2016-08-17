@@ -159,6 +159,19 @@ h1, h2, h3, h4, h5, h6 {
  * Super small header above the content for site name and short description.
  */
 
+
+.midtitle{
+  text-align : center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 7px;
+  margin-bottom: 10px;
+  font-family:  'Fira Sans', sans-serif;
+  font-style: italic;
+  color: #777777;
+  font-size: 1.2rem; /* 15px */
+}
+
 .masthead {
   padding-top:    1rem;
   padding-bottom: 1rem;
@@ -261,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-border-radius: 50%;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
-  background: url(/public/photo2.jpg) no-repeat;
+  background: url(/public/images/photo2.jpg) no-repeat;
   background-size: cover;
   top:0;
   bottom: 0;

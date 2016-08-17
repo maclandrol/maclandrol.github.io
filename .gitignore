@@ -3,3 +3,4 @@ _site
 .source_ignore
 _drafts
 _config.yml
+Gemfile

@@ -19,12 +19,29 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
   <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400i|Fira+Sans:400,400i" rel="stylesheet">
+
 
   <!-- Icons -->
-  <link rel="apple-touch" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-w.png">
+  <link rel="apple-touch" sizes="144x144" href="{{ site.baseurl }}/public/images/apple-touch.png">
   <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+
+  
+  <!-- style inside the page -->
+  {% if page.style %}
+    {% for stl in page.style %}
+      {% if stl contains "http" %}
+        <link rel="stylesheet" href="{{ stl }}">
+      {% else %}
+        <link rel="stylesheet" href="{{ site.baseurl }}/{{ stl }}">
+      {% endif %}      
+    {% endfor %}
+
+  {% endif %}
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
 
 </head>

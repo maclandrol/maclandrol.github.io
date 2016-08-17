@@ -1,0 +1,461 @@
+[
+    {
+        "cand": 29411, 
+        "SE.XPD.TOTL.GB.ZS": 16.68253, 
+        "SE.XPD.CTOT.ZS": 75.86672, 
+        "SE.PRM.CMPT.ZS": 47.2277, 
+        "years": "2003", 
+        "SE.XPD.TOTL.GD.ZS": 3.42565, 
+        "adm": 32.58, 
+        "SE.XPD.MTOT.ZS": 58.17665
+    }, 
+    {
+        "cand": 13259, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 34.38386, 
+        "years": "1997", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 27.13, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 9750, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 30.364520000000002, 
+        "years": "1986", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 16.42, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 9278, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 29.35956, 
+        "years": "1987", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 11.92, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 17055, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 29.36138, 
+        "years": "1984", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 8.93, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 11500, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 33.2863, 
+        "years": "1985", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 12.27, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 12015, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 33.16653, 
+        "years": "1982", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 16.7, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 16175, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 35.92029, 
+        "years": "1983", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 8.13, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 8058, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 29.58871, 
+        "years": "1980", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 23.34, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 10003, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 30.71823, 
+        "years": "1981", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 17.57, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 8507, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 27.091820000000002, 
+        "years": "1988", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 26.13, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 12116, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 32.01722, 
+        "years": "1996", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 37.96, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 107011, 
+        "SE.XPD.TOTL.GB.ZS": 22.22764, 
+        "SE.XPD.CTOT.ZS": 93.41011999999999, 
+        "SE.PRM.CMPT.ZS": 76.34879000000001, 
+        "years": "2014", 
+        "SE.XPD.TOTL.GD.ZS": 4.7956, 
+        "adm": 23.71, 
+        "SE.XPD.MTOT.ZS": 73.5075
+    }, 
+    {
+        "cand": 115322, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "years": "2016", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 30.14, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 69755, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 69.52506, 
+        "years": "2011", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 28.45, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 62686, 
+        "SE.XPD.TOTL.GB.ZS": 26.14396, 
+        "SE.XPD.CTOT.ZS": 91.84848000000001, 
+        "SE.PRM.CMPT.ZS": 64.83935, 
+        "years": "2010", 
+        "SE.XPD.TOTL.GD.ZS": 5.34238, 
+        "adm": 35.27, 
+        "SE.XPD.MTOT.ZS": 85.65456
+    }, 
+    {
+        "cand": 99748, 
+        "SE.XPD.TOTL.GB.ZS": 22.34122, 
+        "SE.XPD.CTOT.ZS": 92.50105, 
+        "SE.PRM.CMPT.ZS": 75.68541, 
+        "years": "2013", 
+        "SE.XPD.TOTL.GD.ZS": 5.01267, 
+        "adm": 32.46, 
+        "SE.XPD.MTOT.ZS": 73.18606
+    }, 
+    {
+        "cand": 93329, 
+        "SE.XPD.TOTL.GB.ZS": 25.02131, 
+        "SE.XPD.CTOT.ZS": 89.42201999999999, 
+        "SE.PRM.CMPT.ZS": 70.52257, 
+        "years": "2012", 
+        "SE.XPD.TOTL.GD.ZS": 5.261430000000001, 
+        "adm": 37.18, 
+        "SE.XPD.MTOT.ZS": 66.85022
+    }, 
+    {
+        "cand": 38657, 
+        "SE.XPD.TOTL.GB.ZS": 18.79039, 
+        "SE.XPD.CTOT.ZS": 86.29343, 
+        "SE.PRM.CMPT.ZS": NaN, 
+        "years": "2005", 
+        "SE.XPD.TOTL.GD.ZS": 4.00211, 
+        "adm": 46.04, 
+        "SE.XPD.MTOT.ZS": 72.95989
+    }, 
+    {
+        "cand": 116865, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": NaN, 
+        "years": "2015", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 34.27, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 7697, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 21.214679999999998, 
+        "years": "1991", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 21.8, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 8361, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 18.65396, 
+        "years": "1990", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 18.73, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 10794, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 23.571460000000002, 
+        "years": "1993", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 27.7, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 8148, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 21.47605, 
+        "years": "1992", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 18.72, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 11061, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 29.92718, 
+        "years": "1995", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 28.07, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 10869, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 25.4791, 
+        "years": "1994", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 27.29, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 6196, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 27.7284, 
+        "years": "1979", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 27.17, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 4669, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 26.382040000000003, 
+        "years": "1978", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 28.27, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 3863, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 24.23805, 
+        "years": "1977", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 29.75, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 2501, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 24.83406, 
+        "years": "1976", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 40.18, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 1822, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 24.92766, 
+        "years": "1975", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 48.18, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 1691, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 20.349, 
+        "years": "1974", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 36.0, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 1347, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 21.51077, 
+        "years": "1973", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 59.3, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 1023, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 21.07967, 
+        "years": "1972", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 58.74, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 674, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 18.04854, 
+        "years": "1971", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 63.2, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 557, 
+        "SE.XPD.TOTL.GB.ZS": NaN, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": NaN, 
+        "years": "1970", 
+        "SE.XPD.TOTL.GD.ZS": NaN, 
+        "adm": 58.52, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 27009, 
+        "SE.XPD.TOTL.GB.ZS": 14.129079999999998, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": 43.03329, 
+        "years": "2002", 
+        "SE.XPD.TOTL.GD.ZS": 3.21089, 
+        "adm": 41.12, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 17026, 
+        "SE.XPD.TOTL.GB.ZS": 17.885189999999998, 
+        "SE.XPD.CTOT.ZS": NaN, 
+        "SE.PRM.CMPT.ZS": NaN, 
+        "years": "1999", 
+        "SE.XPD.TOTL.GD.ZS": 2.83867, 
+        "adm": 29.02, 
+        "SE.XPD.MTOT.ZS": NaN
+    }, 
+    {
+        "cand": 21083, 
+        "SE.XPD.TOTL.GB.ZS": 13.5132, 
+        "SE.XPD.CTOT.ZS": 81.36964, 
+        "SE.PRM.CMPT.ZS": 37.26439, 
+        "years": "2000", 
+        "SE.XPD.TOTL.GD.ZS": 3.1459099999999998, 
+        "adm": 34.09, 
+        "SE.XPD.MTOT.ZS": 63.96689
+    }, 
+    {
+        "cand": 22189, 
+        "SE.XPD.TOTL.GB.ZS": 15.310579999999998, 
+        "SE.XPD.CTOT.ZS": 71.99984, 
+        "SE.PRM.CMPT.ZS": 40.992020000000004, 
+        "years": "2001", 
+        "SE.XPD.TOTL.GD.ZS": 3.4663699999999995, 
+        "adm": 31.56, 
+        "SE.XPD.MTOT.ZS": 56.84198000000001
+    }, 
+    {
+        "cand": 42870, 
+        "SE.XPD.TOTL.GB.ZS": 19.70961, 
+        "SE.XPD.CTOT.ZS": 86.74727, 
+        "SE.PRM.CMPT.ZS": NaN, 
+        "years": "2006", 
+        "SE.XPD.TOTL.GD.ZS": 3.8288800000000003, 
+        "adm": 41.11, 
+        "SE.XPD.MTOT.ZS": 75.04838000000001
+    }, 
+    {
+        "cand": 49310, 
+        "SE.XPD.TOTL.GB.ZS": 14.94869, 
+        "SE.XPD.CTOT.ZS": 94.30213, 
+        "SE.PRM.CMPT.ZS": NaN, 
+        "years": "2007", 
+        "SE.XPD.TOTL.GD.ZS": 3.49798, 
+        "adm": 25.16, 
+        "SE.XPD.MTOT.ZS": 71.89368
+    }, 
+    {
+        "cand": 33617, 
+        "SE.XPD.TOTL.GB.ZS": 19.21395, 
+        "SE.XPD.CTOT.ZS": 79.42737, 
+        "SE.PRM.CMPT.ZS": 50.824909999999996, 
+        "years": "2004", 
+        "SE.XPD.TOTL.GD.ZS": 3.91554, 
+        "adm": 34.1, 
+        "SE.XPD.MTOT.ZS": 64.20116999999999
+    }, 
+    {
+        "cand": 15482, 
+        "SE.XPD.TOTL.GB.ZS": 18.46174, 
+        "SE.XPD.CTOT.ZS": 98.43086, 
+        "SE.PRM.CMPT.ZS": 37.07059, 
+        "years": "1998", 
+        "SE.XPD.TOTL.GD.ZS": 2.74789, 
+        "adm": 34.07, 
+        "SE.XPD.MTOT.ZS": 74.81626
+    }, 
+    {
+        "cand": 57980, 
+        "SE.XPD.TOTL.GB.ZS": 19.08858, 
+        "SE.XPD.CTOT.ZS": 96.30974, 
+        "SE.PRM.CMPT.ZS": 61.989580000000004, 
+        "years": "2008", 
+        "SE.XPD.TOTL.GD.ZS": 4.08138, 
+        "adm": 37.35, 
+        "SE.XPD.MTOT.ZS": 75.23626999999999
+    }, 
+    {
+        "cand": 59852, 
+        "SE.XPD.TOTL.GB.ZS": 18.175620000000002, 
+        "SE.XPD.CTOT.ZS": 94.27971, 
+        "SE.PRM.CMPT.ZS": NaN, 
+        "years": "2009", 
+        "SE.XPD.TOTL.GD.ZS": 4.5508, 
+        "adm": 36.04, 
+        "SE.XPD.MTOT.ZS": 78.57226
+    }
+]
