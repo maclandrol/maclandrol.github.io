@@ -128,7 +128,7 @@ var modify_time_period_params = {
     y_accessor: 'cand'
 }
 
-var url = '../../../../public/assets/data/total.json'
+var url = '../../../../public/assets/data/series.json'
 
 
 d3.json(url, function(data) {
