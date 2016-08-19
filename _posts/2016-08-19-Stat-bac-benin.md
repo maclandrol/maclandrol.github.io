@@ -117,7 +117,7 @@ Faut-il espérer un revirement avant 2020 ou laisser place à la fatalité et ad
 <div id="resstagne"> </div>
 
 
-Redresser la situation nécéssiterait d'adresser au moins une partie de la liste non-exhaustive de problèmes mentionnés plus haut. Parmi les autres aspects à considérer, figurent la réglèmentation de l'enseignement privé, [véritable gangrène de l'éducation](http://beninwebtv.com/2016/06/benin-devenus-etablissements-a-00-bac-20151/), et la valorisation des programmes de formation professionnelle et technique. Ce dernier aspect sera d'ailleurs l'un des sujets de la seconde partie.
+Redresser la situation nécéssiterait d'adresser au moins une partie de la liste non-exhaustive de problèmes mentionnés plus haut. Parmi les autres aspects à considérer, figurent la réglementation de l'enseignement privé, [véritable gangrène de l'éducation](http://beninwebtv.com/2016/06/benin-devenus-etablissements-a-00-bac-20151/), et la valorisation des programmes de formation professionnelle et technique. Ce dernier aspect sera d'ailleurs l'un des sujets de la seconde partie.
 
 <br>
 
