@@ -177,7 +177,7 @@ var resstagne = {
     x_label: 'années',
     aggregate_rollover: true,
     baselines: [{value: 33.33, label: '33.3%, la limite'}],
-    legend : ['réel', 'prédiction (Lin. regr.)']
+    legend : ['réel', 'prédict. (Lin. regr.)']
 };
 
 
