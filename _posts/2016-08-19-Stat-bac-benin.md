@@ -166,7 +166,7 @@ var resstagne = {
     height: 350,
     bottom: 65,
     left: 50,
-    right: 30,
+    right: 60,
     area: false,
     missing_is_hidden: true,
     yax_units: '%',
