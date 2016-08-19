@@ -48,12 +48,12 @@ Il est évident que le processus d'apprentissage est grandement influencé par l
 
 Voilà qui est dit. Je pense néanmoins, (vous êtes invités à partager mon point de vue) que la langue n'est pas forcément le principal obstacle. 
 
-Difficile d'amener un enfant à étudier quand le suivi parental à la maison est absent. Lorsque les parents ne réalisent pas l'importance de l'éducation de leurs enfants, comment voudriez vous que ces derniers soient assidus en classe ? Comment voudriez vous que l'enfant révise ses leçons alors qu'aussitôt rentré à la maison, il doit contribuer à ramener de l'argent parce que sa famille peine à survivre ?
+Difficile d'amener un enfant à étudier quand le suivi parental à la maison est absent. Lorsque les parents ne réalisent pas l'importance de l'éducation de leurs enfants, comment voulez vous que ces derniers soient assidus en classe ? Comment voulez vous que l'enfant révise ses leçons alors qu'aussitôt rentré à la maison, il doit contribuer à ramener de l'argent parce que sa famille peine à survivre ?
 
 Bien sûr qu'il y a des exceptions, mais ce ne sont que des E-X-C-E-P-T-I-O-N-S. 
 
 
-Vu tout cela, pas étonnant que le taux d'achèvement de l'école primaire soit aussi bas (76.35% en 2014). Mais hey, de quoi vous réconforter, le Bénin se débrouille bien mieux que plusieurs autres pays de l'Afrique de l'ouest. Cela ne change toutefois pas le fait que le taux d'alphabétisation des jeunes béninois (15-24 ans), [l'un des pires au monde, n'est que de 42.4%](http://www.indexmundi.com/g/r.aspx?c=bn&v=39&l=fr). Encore là, nous avons le Mali, le Niger et le Burkina Faso, respectivement à 33.4%,  28.7% et 28.7% pour nous donner l'illusion que tout ne va pas si mal que cela. 
+Vu tout cela, il n'est pas surprenant que le «taux d'achèvement» de l'école primaire soit aussi bas (76.35% en 2014). Mais hey, de quoi vous réconforter, le Bénin se débrouille bien mieux que plusieurs autres pays de l'Afrique de l'ouest. Cela ne change toutefois pas le fait que le taux d'alphabétisation des jeunes béninois (15-24 ans), [l'un des pires au monde, n'est que de 42.4%](http://www.indexmundi.com/g/r.aspx?c=bn&v=39&l=fr). Encore là, nous avons le Mali, le Niger et le Burkina Faso, respectivement à 33.4%,  28.7% et 28.7% pour nous donner l'illusion que tout ne va pas si mal que cela. 
 
 
 <div id="completion"> </div>
@@ -66,7 +66,7 @@ Vu tout cela, pas étonnant que le taux d'achèvement de l'école primaire soit 
 
 Peut-on faire confiance à ces statistiques ? hmmm je vous laisse en débattre... J'ose avancer quand même que ces données ne sont pas bien loin de la réalité. 
 
-Ok, je disgresse là... nous parlions de la mediocrité des élèves. Qui d'entre nous est étranger à ces survivants du primaire/secondaire, incapables de s'exprimer en français ? preuves vivantes des lacunes de nos pédagogues ?
+Ok, je disgresse là... nous parlions de la mediocrité des élèves. Qui d'entre nous est étranger à ces survivants du primaire/secondaire, incapables de s'exprimer en français ? preuves vivantes des lacunes évidentes de nos pédagogues ?
 
 <div class="midtitle">"L'enseignant, le coupable parfait."</div>
 
@@ -74,23 +74,23 @@ Ok, je disgresse là... nous parlions de la mediocrité des élèves. Qui d'entr
     et des sentiments généreux, ce serait ma plus douce récompense...
 
 
-Vessiot est mort depuis, et avec lui l'ambition du maître d'autrefois. Le nouvel instituteur n'a suivi aucune formation, est chargé de classes de plus d'une centaine d'élèves et n'a pas perçu son salaire depuis deux mois. Comprenez bien que l'éducation des étudiants est le cadet de ses soucis. Entre les grèves et les __«biz»__ d'à côté, l'enseignement pour lui est devenu très secondaire. 
+Vessiot est mort depuis, et avec lui l'ambition du maître d'autrefois. Le nouvel instituteur n'a suivi aucune formation pédagogique, est chargé de classes de plus d'une centaine d'élèves et n'a pas perçu son salaire depuis deux mois. Comprenez bien que l'éducation des étudiants est le cadet de ses soucis. Entre les grèves et les __«biz»__ d'à côté, l'enseignement pour lui est devenu très secondaire. 
 
-Ne me méprenez pas, je suis fils d'enseignante, et j'ai eu le plaisir de côtoyer plusieurs enseignants précellents, particulièrement dévoués à leur rôle d'éducateur. Cependant, les faits sont là. D'après les données [de la banque mondiale (2014)](http://data.worldbank.org/indicator/SE.SEC.TCAQ.ZS?locations=BJ), sur les 90439 enseignants du secondaire, seulement 8.70% ont été "officiellement" formés. Pas étonnant, quand on pense à la prolifération _«d'éducateurs»_  extrêmement non-qualifiés (ni agents de l'État, ni contractuels), qui ont fini enseignants parce que l'alternative, le _«zémidjan»_, n'était pas très excitante. Il est vrai que le Bénin manque cruellement d'enseignants, mais, il faut un minimum de formation quand même... Que fait donc ce foutu gouvenement ?
+Ne me méprenez pas, je suis fils d'enseignante, et j'ai eu le plaisir de côtoyer plusieurs enseignants précellents, particulièrement dévoués à leur rôle d'éducateur. Cependant, les faits sont là. D'après les données [de la banque mondiale (2014)](http://data.worldbank.org/indicator/SE.SEC.TCAQ.ZS?locations=BJ), sur les 90439 enseignants du secondaire, seulement 8.70% ont été "officiellement" formés. Pas étonnant, quand on pense à la prolifération _«d'éducateurs»_  extrêmement non-qualifiés (ni agents de l'État, ni contractuels), qui ont fini enseignants parce que l'alternative, le _«zémidjan»_, n'était pas très excitante. Il est vrai que le Bénin manque cruellement d'enseignants, mais, une formation minimale est quand même requise... Que fait donc ce foutu gouvernement ?
 
 
 <div class="midtitle"> L'État béninois ne fait jamais rien !</div>
 
-Les nombreuses réformes dans le système éducatif béninois n'ont presque jamais été accompagnées par une mise à niveau des enseignants. En 2006, <a href="#ref1">une étude réalisée</a> par le Ministère des enseignements primaire et secondaire indiquait que les sessions de formation continue des enseignants du secondaire se limitaient à une période de trois à cinq jours par an et étaient surtout destinées aux nouveaux effectifs intégrant l’enseignement sans formation initiale préalable (enseignants contractuels, nouvelles recrues, etc).
+Les nombreuses réformes dans le système éducatif béninois n'ont presque jamais été accompagnées par une mise à niveau des enseignants. En 2006, <a href="#ref1">une étude réalisée</a> par le Ministère des enseignements primaire et secondaire indiquait que les sessions de formation continue des enseignants du secondaire se limitaient à une période de trois à cinq jours par an et étaient surtout destinées aux nouveaux effectifs intégrant l’enseignement, sans formation initiale préalable (enseignants contractuels, nouvelles recrues, etc).
 
-En effet, former un enseignant dans les écoles normales spécialisées, ce n'est pas gratuit. Une [étude récente](http://unesdoc.unesco.org/images/0021/002171/217150f.pdf) estime que le coût annuel de la __formation initiale__ des enseignants de la maternelle et du primaire tourne autour de 2.45 milliards de CFA. S'il faut ajouter à cela, le coût de la __formation initiale__ des enseignants du secondaire et du supérieur, ainsi que le coût de la __formation continue__, cette somme monte donc très rapidement. On peut toujours se dire qu'il s'agit de dépenses raisonnables que même un pays comme le Bénin pourrait se permettre, d'autant plus que nous bénéficions de nombreuses [subventions à l'éducation](http://www.globalpartnership.org/country/benin) (à titre d'exemple).
+En effet, former un enseignant dans les écoles normales spécialisées, ce n'est pas gratuit. Une [étude récente](http://unesdoc.unesco.org/images/0021/002171/217150f.pdf) estime à 2.45 milliards de FCFA, le coût annuel de la __formation initiale__ des enseignants de la maternelle, considérant les besoins moyens. S'il faut ajouter à cela, le coût de la __formation initiale__ des enseignants du secondaire et du supérieur, ainsi que le coût de la __formation continue__, cette somme monte donc très rapidement. On peut toujours se dire qu'il s'agit de dépenses raisonnables, que même un pays comme le Bénin pourrait se permettre, d'autant plus que nous bénéficions de nombreuses [subventions à l'éducation](http://www.globalpartnership.org/country/benin) (à titre d'exemple).
 
-Seul hic, détournement mis à part, les salaires des enseignants représentent déjà plus des [2/3 des dépenses de l'État dans le secteur de l'éducation](http://unesdoc.unesco.org/images/0021/002171/217150f.pdf), ce qui laisse moins de place à d'autres dépenses tout aussi pertinentes (fonctionnement des établissements, gestion des administrations, dépenses sociales, formation du personnel, etc).
+Seul hic, détournement de fonds mis à part, les salaires des enseignants représentent déjà plus des [2/3 des dépenses de l'État dans le secteur de l'éducation](http://unesdoc.unesco.org/images/0021/002171/217150f.pdf), ce qui laisse moins de place à d'autres dépenses tout aussi pertinentes (fonctionnement des établissements, gestion des administrations, dépenses sociales, formation du personnel, etc).
 
 <div id="ensremu"> </div>
 
 
-Les différentes mesures prises par l'État, ces dernières années, en ce qui concerne l'éducation sont tous louables. Gratuité du primaire, bourses universitaires automatiques, bourse de formation des futurs enseignants, etc, il s'agit bien d'excellentes décisions. Efforts volontaires ou pressions des bailleurs de fonds ? difficile à dire. En revanche, il est incontestable que nous sommes encore très loin des objectifs et que plusieurs de ces "bonnes décisions" sont futiles lorsque les infrastructures et la gestion adéquate devant les accompagner ne sont pas présentes. 
+Les différentes mesures prises par l'État, ces dernières années, en ce qui concerne l'éducation sont tous louables. Gratuité du primaire, bourses universitaires automatiques, bourse de formation des futurs enseignants, etc, il s'agit là d'excellentes décisions. Efforts volontaires ou pressions des bailleurs de fonds ? difficile à dire. En revanche, il est incontestable que nous sommes encore très loin des objectifs et que plusieurs de ces "bonnes décisions" sont futiles lorsque les infrastructures et la gestion adéquate devant les accompagner ne sont pas présentes. 
 
 <div class="midtitle">
 <img src="https://cdn.meme.am/instances/500x/71131261.jpg"/>
@@ -109,15 +109,15 @@ Il serait toutefois injuste de faire porter tout le poids de nos résultats déc
 
 <div class="midtitle"> Le tier, est ce notre limite ? </div>
 
-En effet, bien avant l'implémentation de la forme du nouveau programme, tel que nous la connaissons depuis quelques années dans l'enseignement secondaire, les résultats nationaux au baccalauréat __stagnaient déjà à ~ 33%__. Avec une telle tendance, il faudrait attendre encore plusieurs années pour remonter à plus de 50%.
+En effet, bien avant l'implémentation de la forme du nouveau programme, tel que nous la connaissons depuis quelques années dans l'enseignement secondaire, les résultats nationaux au baccalauréat __stagnaient déjà à ~ 33%__. Avec une telle tendance, il faudrait attendre encore plusieurs années pour remonter au dessus de 50%.
 
-Faut-il espérer un revirement avant 2020 ou laisser place à la fatalité et admettre comme le [disent les Inconnus que c'est «notre destin»](https://www.youtube.com/watch?v=1V0IE87waHU) ?
+Faut-il espérer un revirement avant 2020 ou laisser place à la fatalité et admettre comme [l'affirment les Inconnus, que c'est «notre destin»](https://www.youtube.com/watch?v=1V0IE87waHU) ?
 
 
 <div id="resstagne"> </div>
 
 
-Changer la donne nécéssiterait d'adresser la liste non-exhaustive de problèmes mentionnés plus haut. Parmi les autres aspects à considérer, figurent la réglèmentation de l'enseignement privé, [véritable gangrène de l'éducation](http://beninwebtv.com/2016/06/benin-devenus-etablissements-a-00-bac-20151/), et la valorisation des programmes de formation professionnelle et technique. Ce dernier aspect sera d'ailleurs l'un des sujets de la seconde partie.
+Redresser la situation nécéssiterait d'adresser au moins une partie de la liste non-exhaustive de problèmes mentionnés plus haut. Parmi les autres aspects à considérer, figurent la réglèmentation de l'enseignement privé, [véritable gangrène de l'éducation](http://beninwebtv.com/2016/06/benin-devenus-etablissements-a-00-bac-20151/), et la valorisation des programmes de formation professionnelle et technique. Ce dernier aspect sera d'ailleurs l'un des sujets de la seconde partie.
 
 <br>
 
@@ -183,7 +183,7 @@ var resstagne = {
 
 var primary_completion = {
     title: "Taux d'achèvement du primaire",
-    description: "Taux d'achèvement de l'école primaire au Bénin par an",
+    description: "Taux d'achèvement de l'école primaire au Bénin par année",
     full_width: true,
     height: 350,
     bottom: 65,
@@ -207,7 +207,7 @@ var primary_completion = {
 
 var remuneration = {
     title: "Rémunération des enseignants",
-    description: "Rémunération de tout le personnel dans l'éducation par an (en fonction du pourcentage des dépenses dans les institutions publiques d'éducation) - Données compilées par la banque mondiale",
+    description: "Rémunération de tout le personnel dans l'éducation par année (en fonction du pourcentage des dépenses dans les institutions publiques d'éducation) - Données compilées par la banque mondiale",
     full_width: true,
     height: 350,
     bottom: 65,
