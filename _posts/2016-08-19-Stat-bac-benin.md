@@ -288,9 +288,11 @@ d3.json('../../../../public/assets/data/predict.json', function(data) {
 $('.split-by-controls button').click(function() {
     var new_y_accessor = $(this).data('y_accessor');
     if (new_y_accessor == 'adm'){
+        split_by_params.yax_units = '%';
         split_by_params.description = "% d'admis au baccalauréat depuis 1969";
 
     }else{
+        split_by_params.yax_units = '';
         split_by_params.description = "Nombre d'inscrits au baccalauréat depuis 1969";
     }
     split_by_params.y_accessor = new_y_accessor;
