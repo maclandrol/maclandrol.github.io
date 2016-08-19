@@ -31,7 +31,7 @@ Le système éducatif du Bénin ne fonctionne pas ! Voilà ce que vous chantera,
 
 <div class="midtitle">"Faut-il accuser la médiocrité des étudiants ?"</div>
 
-Vous auriez du mal à me faire gober que les malheureux 51% au CEP sont __tous__ des cancres. Est-ce si difficile que ça d'apprendre à lire et à compter ?  Oui je vous vois venir, donc je reprends : Est-ce si difficile que ça "d'apprendre à lire et à compter en français" ?
+Vous auriez du mal à me faire gober que les malheureux 51% au CEP sont __tous__ des cancres. Est-ce si difficile que ça d'apprendre à lire et à compter ?  Oui je vous vois venir, donc je reprends : est-ce si difficile que ça "d'apprendre à lire et à compter en français" ?
 
 Il est évident que le processus d'apprentissage est grandement influencé par la langue d'enseignement. À ce propos, Amadou-Mahtar M'Bow, ex-directeur de l'UNESCO [s'exprimait en ces termes](http://unesdoc.unesco.org/images/0008/000829/082991fo.pdf) [1] :
 
