@@ -36,156 +36,244 @@
 }
 
 
+.tooltip,
+.popover,
+.mg-chart-title,
+.mg-chart-description,
+.mg-active-datapoint {
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size: 0.7em;
+}
+.mg-x-axis .label,
+.mg-y-axis .label
+{
+    font-size: 0.7rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    text-transform: lowercase;
+}
 /*
 
-Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+
+Original code from bootstrap.css
 
 */
 
-.hljs {
+.tooltip {
+  position: absolute;
+  z-index: 1070;
   display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #f0f0f0;
-  -webkit-text-size-adjust: none;
+  font-size: 12px;
+  line-height: 1.4;
+  visibility: visible;
+  filter: alpha(opacity=0);
+  opacity: 0;
 }
-
-.hljs,
-.hljs-subst,
-.hljs-tag .hljs-title,
-.nginx .hljs-title {
-  color: black;
+.tooltip.in {
+  filter: alpha(opacity=90);
+  opacity: .9;
 }
-
-.hljs-string,
-.hljs-title,
-.hljs-constant,
-.hljs-parent,
-.hljs-tag .hljs-value,
-.hljs-rules .hljs-value,
-.hljs-preprocessor,
-.hljs-pragma,
-.haml .hljs-symbol,
-.ruby .hljs-symbol,
-.ruby .hljs-symbol .hljs-string,
-.hljs-template_tag,
-.django .hljs-variable,
-.smalltalk .hljs-class,
-.hljs-addition,
-.hljs-flow,
-.hljs-stream,
-.bash .hljs-variable,
-.apache .hljs-tag,
-.apache .hljs-cbracket,
-.tex .hljs-command,
-.tex .hljs-special,
-.erlang_repl .hljs-function_or_atom,
-.asciidoc .hljs-header,
-.markdown .hljs-header,
-.coffeescript .hljs-attribute {
-  color: #e6337c;
+.tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px;
 }
-
-.smartquote,
-.hljs-comment,
-.hljs-annotation,
-.hljs-template_comment,
-.diff .hljs-header,
-.hljs-chunk,
-.asciidoc .hljs-blockquote,
-.markdown .hljs-blockquote {
-  color: #888;
+.tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px;
 }
-
-.hljs-number,
-.hljs-date,
-.hljs-regexp,
-.hljs-literal,
-.hljs-hexcolor,
-.smalltalk .hljs-symbol,
-.smalltalk .hljs-char,
-.go .hljs-constant,
-.hljs-change,
-.lasso .hljs-variable,
-.makefile .hljs-variable,
-.asciidoc .hljs-bullet,
-.markdown .hljs-bullet,
-.asciidoc .hljs-link_url,
-.markdown .hljs-link_url {
-  color: #366797;
+.tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px;
 }
-
-.hljs-label,
-.hljs-javadoc,
-.ruby .hljs-string,
-.hljs-decorator,
-.hljs-filter .hljs-argument,
-.hljs-localvars,
-.hljs-array,
-.hljs-attr_selector,
-.hljs-important,
-.hljs-pseudo,
-.hljs-pi,
-.haml .hljs-bullet,
-.hljs-doctype,
-.hljs-deletion,
-.hljs-envvar,
-.hljs-shebang,
-.apache .hljs-sqbracket,
-.nginx .hljs-built_in,
-.tex .hljs-formula,
-.erlang_repl .hljs-reserved,
-.hljs-prompt,
-.asciidoc .hljs-link_label,
-.markdown .hljs-link_label,
-.vhdl .hljs-attribute,
-.clojure .hljs-attribute,
-.asciidoc .hljs-attribute,
-.lasso .hljs-attribute,
-.coffeescript .hljs-property,
-.hljs-phony {
-  color: #88f;
+.tooltip.left {
+  padding: 0 5px;
+  margin-left: -3px;
 }
-
-.hljs-keyword,
-.hljs-id,
-.hljs-title,
-.hljs-built_in,
-.css .hljs-tag,
-.hljs-javadoctag,
-.hljs-phpdoc,
-.hljs-dartdoc,
-.hljs-yardoctag,
-.smalltalk .hljs-class,
-.hljs-winutils,
-.bash .hljs-variable,
-.apache .hljs-tag,
-.hljs-type,
-.hljs-typename,
-.tex .hljs-command,
-.asciidoc .hljs-strong,
-.markdown .hljs-strong,
-.hljs-request,
-.hljs-status {
-  font-weight: bold;
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 4px;
 }
-
-.asciidoc .hljs-emphasis,
-.markdown .hljs-emphasis {
-  font-style: italic;
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
 }
-
-.nginx .hljs-built_in {
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+.tooltip.top-left .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+.tooltip.top-right .tooltip-arrow {
+  right: 5px;
+  bottom: 0;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #000;
+}
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #000;
+}
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+.tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+.tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  text-align: left;
+  white-space: normal;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+.popover.top {
+  margin-top: -10px;
+}
+.popover.right {
+  margin-left: 10px;
+}
+.popover.bottom {
+  margin-top: 10px;
+}
+.popover.left {
+  margin-left: -10px;
+}
+.popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
   font-weight: normal;
+  line-height: 18px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
 }
-
-.coffeescript .javascript,
-.javascript .xml,
-.lasso .markup,
-.tex .hljs-formula,
-.xml .javascript,
-.xml .vbscript,
-.xml .css,
-.xml .hljs-cdata {
-  opacity: 0.5;
+.popover-content {
+  padding: 9px 14px;
+}
+.popover > .arrow,
+.popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.popover > .arrow {
+  border-width: 11px;
+}
+.popover > .arrow:after {
+  content: "";
+  border-width: 10px;
+}
+.popover.top > .arrow {
+  bottom: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: #999;
+  border-top-color: rgba(0, 0, 0, .25);
+  border-bottom-width: 0;
+}
+.popover.top > .arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-color: #fff;
+  border-bottom-width: 0;
+}
+.popover.right > .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-right-color: #999;
+  border-right-color: rgba(0, 0, 0, .25);
+  border-left-width: 0;
+}
+.popover.right > .arrow:after {
+  bottom: -10px;
+  left: 1px;
+  content: " ";
+  border-right-color: #fff;
+  border-left-width: 0;
+}
+.popover.bottom > .arrow {
+  top: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0, 0, 0, .25);
+}
+.popover.bottom > .arrow:after {
+  top: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-width: 0;
+  border-bottom-color: #fff;
+}
+.popover.left > .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: #999;
+  border-left-color: rgba(0, 0, 0, .25);
+}
+.popover.left > .arrow:after {
+  right: 1px;
+  bottom: -10px;
+  content: " ";
+  border-right-width: 0;
+  border-left-color: #fff;
 }
