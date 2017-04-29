@@ -12,11 +12,12 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">{{ post.date | date_to_string }}
     {% if site.disqus_shortname %}
       &middot;
       <a href="{{ site.url }}{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
     {% endif %}
+    </span>
       {{ post.excerpt }}
     <a class="More" href="{{ post.url }}"> read more --></a>
   </div>
