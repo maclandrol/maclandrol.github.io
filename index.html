@@ -13,8 +13,9 @@ title: Home
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
-    {% if post.comments %}
-      <span class="post-date"><a href="{{ post.url }}index.html#disqus_thread"></a></span>
+    {% if site.disqus_shortname %}
+      &middot;
+      <a href="{{ site.url }}{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
     {% endif %}
       {{ post.excerpt }}
     <a class="More" href="{{ post.url }}"> read more --></a>
@@ -39,4 +40,19 @@ title: Home
   {% endif %}
 </div>
 
-<script id="dsq-count-scr" src="//mrnoutahi.disqus.com/count.js" async></script>
+
+<!-- Add Disqus comment count (not the comments) -->
+{% if site.disqus_shortname %}
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES * * */
+  var disqus_shortname  = '{{ site.disqus_shortname }}';
+  // var disqus_developer = 1; // Comment out when the site is live
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+{% endif %}

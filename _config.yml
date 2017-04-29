@@ -10,6 +10,7 @@ tagline:             'Some thoughts on boring stuff, and bioinformatics'
 description:         ''
 url:                 'https://mrnoutahi.com'
 baseurl:             'https://mrnoutahi.com'
+disqus_shortname:    'mrnoutahi'
 paginate:            5
 github_username:     maclandrol
 twitter_username:    ENoutahi
