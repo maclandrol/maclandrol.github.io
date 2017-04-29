@@ -13,6 +13,7 @@ title: Home
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date"><a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.url}}"></a></span>
       {{ post.excerpt }}
     <a class="More" href="{{ post.url }}"> read more --></a>
   </div>
@@ -36,3 +37,4 @@ title: Home
   {% endif %}
 </div>
 
+<script id="dsq-count-scr" src="//mrnoutahi.disqus.com/count.js" async></script>
