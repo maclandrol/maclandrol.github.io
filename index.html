@@ -14,7 +14,7 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
     {% if post.comments %}
-      <span class="post-date"><a href="{{ post.url }}index.html#disqus_thread">comment</a></span>
+      <span class="post-date"><a href="{{ post.url }}index.html#disqus_thread"></a></span>
     {% endif %}
       {{ post.excerpt }}
     <a class="More" href="{{ post.url }}"> read more --></a>
