@@ -13,8 +13,8 @@ title: Home
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}
-    {% if site.disqus_shortname %}
-      &middot;
+    {% if site.disqus_shortname and post.comments %}
+    &middot;      
       <a href="{{ site.url }}{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
     {% endif %}
     </span>
