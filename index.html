@@ -13,7 +13,9 @@ title: Home
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
-    <span class="post-date"><a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.url}}"></a></span>
+    {% if post.comments %}
+      <span class="post-date"><a href="{{ post.url }}index.html#disqus_thread">comment</a></span>
+    {% endif %}
       {{ post.excerpt }}
     <a class="More" href="{{ post.url }}"> read more --></a>
   </div>
