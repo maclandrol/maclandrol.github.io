@@ -6,7 +6,7 @@ tags: [phylogenetics, python, tree, en]
 comments : true
 ---
 
-If you work with trees (phylogenetics or not) and you regularly use python, you have probably used or heard about one of the following packages: [Bio.phylo](https://github.com/biopython/biopython/tree/master/Bio/Phylo), [dendropy](https://pythonhosted.org/DendroPy/) or [ETE](etetoolkit.org). 
+If you work with trees (phylogenetics or not) and you regularly use python, you have probably used or heard about one of the following packages: [Bio.phylo](https://github.com/biopython/biopython/tree/master/Bio/Phylo), [dendropy](https://pythonhosted.org/DendroPy/) or [ETE](http://etetoolkit.org). 
 
 While each one of those packages has its own unique strengths and weaknesses, I particularly like the **ETE** module. Here is why !
 
