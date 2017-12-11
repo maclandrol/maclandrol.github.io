@@ -11,4 +11,4 @@ I love hacking things to fit my needs. So I thought maybe I should share it with
 
 I'm open for collaboration on any exciting project. Follow me on [github](http://github.com/{{ site.github_username }}) and [twitter](https://twitter.com/{{ site.twitter_username }}).
 
-For a list of my publication, see the [google scholar page](https://scholar.google.ca/citations?user=JcuwpbQAAAAJ)
+For a list of my publication, see my [google scholar page](https://scholar.google.ca/citations?user=JcuwpbQAAAAJ)

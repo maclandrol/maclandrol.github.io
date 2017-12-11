@@ -41,11 +41,11 @@ body {
 }
 
 html {
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: "Lora", Georgia, serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, sans-serif;
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-heading {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: -.5px;
   margin-bottom: 15px;
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-footer li,
 .site-footer p {
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: -.3px;
   color: #828282;
 }
@@ -138,8 +138,8 @@ h1, h2, h3, h4, h5, h6 {
 .github-icon-svg,
 .twitter-icon-svg {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
   position: relative;
   top: 3px;
 }
@@ -456,9 +456,15 @@ a.sidebar-nav-item:focus {
 /* Meta data line below post title */
 .post-date {
   display: block;
-  margin-top: -.5rem;
+  margin-top: -.4rem;
   margin-bottom: 1rem;
   color: #9a9a9a;
+  font-size: 0.9rem;
+}
+
+.entry-tags{
+  font-size: 0.9rem;
+
 }
 
 /* Related posts */
@@ -629,6 +635,19 @@ a.pagination-item:hover {
 .theme-base-0c .sidebar-toggle,
 .theme-base-0c .related-posts li a:hover {
   color: #75b5aa;
+}
+
+
+/* NewBlue */
+.theme-base-0g .sidebar,
+.theme-base-0g .sidebar-toggle:active,
+.theme-base-0g #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #3f76af;
+}
+.theme-base-0g .container a,
+.theme-base-0g .sidebar-toggle,
+.theme-base-0g .related-posts li a:hover {
+  color: #3f76af;
 }
 
 /* Blue */
