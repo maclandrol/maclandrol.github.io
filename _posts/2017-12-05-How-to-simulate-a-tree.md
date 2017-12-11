@@ -8,9 +8,6 @@ highlight: true
 math: true
 ---
 
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
-
 Benchmarking phylogenetic algorithms often required the availability of a dataset of true evolutionary histories. As these true histories are hardly known, we rely instead on simulated datasets. In this series of post, I will present simple algorithms for the simulation of phylogenetic trees depicting the evolutionary history of a gene family. This first part will focus on the simulation of `species tree` under either a `pure birth` or a `birth-death` process.
 
 <!--more-->
@@ -31,10 +28,7 @@ For a straightforward implementation (code below), we start with a pool of extan
 - Total evolution time
 - Total number of extant species (number of leaves)
 
-The following implementation in python use <strong><a href="http://etetoolkit.org">ETE</a></strong> and can be easily adapted to your need. 
-
-<code data-gist-id="09f2b2f47713da9d465a1a7f72078fe7" data-gist-line="19-29, 71-81" data-gist-highlight-line="19" data-gist-show-spinner="true" gist-enable-cache="true"></code>
-
+See <a href="#file-tree_simul-py-L19">birth_only_tree</a> at the end of the post for an implementation in python that use <strong><a href="http://etetoolkit.org">ETE</a></strong> and can be easily adapted to your need.
 
 And an example of output is :
 
@@ -48,10 +42,7 @@ As you can see, the simulated tree is perfectly ultrametric.
 ## Simulating a tree in a birth-death model
 
 In a birth-death model, lineage can go extinct. Therefore, a rate for death events should additionally be be considered. Similar to the Yule process, in a small interval of time \\( ]t_i, t_i + \Delta t[ \\) , only one of the three following transitions are possible: `one death`, `one birth` or `no event`. 
-The birth-death model is one of the most used for the simulation of species trees.  Implementation of this model follows a structure similar to the one above. The most important difference is to ensure that extinct species cannot be selected to give birth and should not have their branch lengths updated either. 
-
-<code data-gist-id="09f2b2f47713da9d465a1a7f72078fe7" data-gist-line="84-94, 177-187" data-gist-highlight-line="84" data-gist-show-spinner="true" gist-enable-cache="true"></code>
-
+The birth-death model is one of the most used for the simulation of species trees. Implementation of this model (<a href="#file-tree_simul-py-L84">birth_death_tree</a> ) follows a structure similar to the one above. The most important difference is to ensure that extinct species cannot be selected to give birth and should not have their branch lengths updated either. 
 
 And an example of output is :
 
@@ -63,6 +54,11 @@ The lost nodes are shown in gray dashed line. You can see that the corresponding
 
 In the second part of this post, I will show how to simulate a gene family evolution  with duplication, loss and transfer events, given a species tree. 
 
+## Implementation
+
+
+{% gist 09f2b2f47713da9d465a1a7f72078fe7 %}
+
 
 ### References
 
@@ -72,10 +68,6 @@ In the second part of this post, I will show how to simulate a gene family evolu
 
 .node circle {
   fill: #999;
-}
-
-.node--select circle {
-  fill: blue;
 }
 
 .link {

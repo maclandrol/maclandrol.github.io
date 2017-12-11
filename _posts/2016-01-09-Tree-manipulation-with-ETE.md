@@ -3,7 +3,7 @@ layout: post
 date: 2016-01-09
 title: "Why you should use ete for tree exploration and visualisation in python !"
 tags: [phylogenetics, python, tree, en]
-comments : true
+comments: true
 ---
 
 If you work with trees (phylogenetics or not) and you regularly use python, you have probably used or heard about one of the following packages: [Bio.phylo](https://github.com/biopython/biopython/tree/master/Bio/Phylo), [dendropy](https://pythonhosted.org/DendroPy/) or [ETE](http://etetoolkit.org). 
