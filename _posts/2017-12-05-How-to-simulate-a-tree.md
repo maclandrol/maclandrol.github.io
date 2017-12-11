@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2017-08-03
+date: 2017-12-05
 title: "How to simulate a phylogenetic tree ? (part 1)"
 tags: ['phylogenetic', 'tree', 'bioinfo', 'python']
 comments: true
