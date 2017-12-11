@@ -4,6 +4,7 @@ date: 2016-08-19
 title: "Sur l'éducation au Bénin, (1/2)."
 tags: [stats, benin, fr]
 comments: true
+highlight: true
 style: ["https://cdnjs.cloudflare.com/ajax/libs/metrics-graphics/2.9.0/metricsgraphics.min.css", "public/css/education.css", "https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css"]
 ---
 

@@ -23,12 +23,12 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+{% if page.comments %}
+  {% include comments.html %}
+{% endif %}
 {% if page.math %}
   {% include mathjax.html %}
 {% endif %}
 {% if page.highlight %}
   {% include highlight.html %}
-{% endif %}
-{% if page.comments %}
-  {% include comments.html %}
 {% endif %}
