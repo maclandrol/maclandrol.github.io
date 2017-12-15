@@ -15,7 +15,7 @@ Simulations of phylogenetic trees are often conducted under a constant rate of e
 
 ## Ultrametric binary tree with a pure birth model (Yule process).
 
-With a pure birth model, the rate of only one event (birth of two new nodes from a parent one) is required. This model can be used for the simulation of species trees where the birth rate can be seen as the speciation rate. From a time \\( t_0 \\ corresponding to the starting time of evolution with a single ancestral species, new branches leading to new species are generated. This process is also referred to as the Yule process [1]. 
+With a pure birth model, the rate of only one event (birth of two new nodes from a parent one) is required. This model can be used for the simulation of species trees where the birth rate can be seen as the speciation rate. From a time \\( t_0 )\\ corresponding to the starting time of evolution with a single ancestral species, new branches leading to new species are generated. This process is also referred to as the Yule process [1]. 
 
 This is a really simple and quite unrealistic model since it entirely ignore the dynamics of evolution. At any time \\( t_i \\) there are \\( n_i \\) number of individuals in the population, and each individual is able to independently give birth to an offspring at constant rate \\( \sigma \\). At most one birth can occur within a time interval  \\( ]t_i, t_i + \Delta t[ \\) and after a birth has happened, the parent and child evolve independently.
 
