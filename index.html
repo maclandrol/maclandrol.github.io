@@ -5,7 +5,8 @@ title: Home
 
 <div class="posts">
   {% for post in paginator.posts %}
-  {% if not post.future %}
+  {% if post.infuture %}
+  {% else %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url }}">

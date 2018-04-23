@@ -4,7 +4,7 @@ date: 2018-04-24
 title: "L'importation massive de riz au Bénin, une situation inquiétante"
 tags: ['benin', 'opendata', 'riz']
 comments: true
-future: true
+infuture: true
 highlight: true
 style: ["public/css/trade.css"]
 ---
