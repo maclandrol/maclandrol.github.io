@@ -73,16 +73,16 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .container {
-  max-width: 28rem;
+  max-width: 32rem;
 }
 @media (min-width: 38em) {
   .container {
-    max-width: 32rem;
+    max-width: 35rem;
   }
 }
 @media (min-width: 56em) {
   .container {
-    max-width: 38rem;
+    max-width: 40rem;
   }
 }
 
@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family:  'Fira Sans', sans-serif;
   font-style: italic;
   color: #777777;
-  font-size: 1.2rem; /* 15px */
+  font-size: 1.1rem; /* 15px */
 }
 
 .masthead {
@@ -749,4 +749,9 @@ a.pagination-item:hover {
     -webkit-transform: scale(1.0);
     opacity: 0;
   }
+}
+
+sup{
+  font-size: 0.75rem;
+  font-family: Times, Times New Roman, serif !important;
 }

@@ -1,0 +1,44 @@
+.content{
+	text-align: justify;
+}
+
+.vizdiv{
+     width: 600px;
+     height: 400px;
+     margin-top: 2em;
+     margin-bottom: 2em;
+}
+
+
+.d3plus_title text tspan{
+	max-width: 100px;
+	font-weight: "bold";
+	white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#geodata{
+	width:100%;
+	min-height: 200px;
+}
+
+
+#trademap{
+	height: 500px;
+}
+
+.img-center{
+	max-height: 300px;
+	margin: auto;
+}
+
+
+.midtitle{
+	font-size: 1.08rem;
+}
+
+#ricebenin{
+	height: 500px;
+}
