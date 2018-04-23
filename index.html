@@ -5,6 +5,7 @@ title: Home
 
 <div class="posts">
   {% for post in paginator.posts %}
+  {% if not post.future %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url }}">
@@ -21,6 +22,7 @@ title: Home
       {{ post.excerpt }}
     <a class="More" href="{{ post.url }}"> read more --></a>
   </div>
+  {% endif %}
   {% endfor %}
 </div>
 
