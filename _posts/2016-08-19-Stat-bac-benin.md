@@ -94,7 +94,7 @@ Seul hic, détournement de fonds mis à part, les salaires des enseignants repr�
 Les différentes mesures prises par l'État, ces dernières années, en ce qui concerne l'éducation sont toutes louables. Gratuité du primaire, bourses universitaires automatiques, bourse de formation des futurs enseignants, etc, il s'agit là d'excellentes décisions. Efforts volontaires ou pressions des bailleurs de fonds ? difficile à dire. En revanche, il est incontestable que nous sommes encore très loin des objectifs et que plusieurs de ces "bonnes décisions" sont futiles lorsque les infrastructures et la gestion adéquate devant les accompagner ne sont pas présentes. 
 
 <div class="midtitle">
-<img src="https://cdn.meme.am/instances/500x/71131261.jpg"/>
+<img src="https://i.imgur.com/qGleUTe.jpg"/>
 </div>
 
 
