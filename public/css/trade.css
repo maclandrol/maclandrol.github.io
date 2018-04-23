@@ -11,23 +11,7 @@
 }
 
 
-@media (max-width: 30em) {
-  .vizdiv {
-    max-width: 23rem;
-  }
- #trademap, #ricebenin{
-	height: 24rem;
- }
-}
-@media (max-width: 38em) {
-  .vizdiv {
-    max-width: 28rem;
-  }
-  #trademap, #ricebenin{
-	height: 26rem;
- }
 
-}
 
 
 .d3plus_title text tspan{
