@@ -226,7 +226,7 @@ Par ailleurs, étant donné que [notre économie dépends fortement du Nigeria](
 		.text('Attribute_Description')
 		.legend({'font': {'size': 12},'data': false})		
 		.y({'value': 'Total en tonne', 'grid':false})
-		.x({'grid': false,'value': 'Année'})
+		.x({'grid': false,'value': 'Année','ticks': {'labels': [1990,1995,2000,2005,2010,2015]}})
 		.id('Attribute_Description')
 		.title({"value":"Quantité de riz produit, importé et nécessaire au Bénin","sub":"Source: USDA/ CCR-B/ INSAE"})
         .footer({'value': 'Les importations de riz comblent largement le déficit engendré par la production insuffisante. Notez qu\'il s\'agit d\'une estimation très conservative des besoins, basée sur une consommation annuelle de 35 kg/an/habitant et sur des données historiques du CCR-B (voir code). Les importations ne concernent que celles destinées à la consommation locale (corrigé pour tenir compte des exportations', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}})
