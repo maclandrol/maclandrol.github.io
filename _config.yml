@@ -17,7 +17,7 @@ twitter_username:    ENoutahi
 hostsite:            https://github.com/maclandrol/maclandrol.github.io
 hoster:              'github'
 markdown:            kramdown
-
+future:              true
 
 # About/contact
 author:
