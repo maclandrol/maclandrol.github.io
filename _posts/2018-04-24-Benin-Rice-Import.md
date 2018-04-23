@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2018-04-23
+date: 2018-04-24
 title: "L'importation massive de riz au Bénin, une situation inquiétante"
 tags: ['benin', 'opendata', 'riz']
 comments: true
@@ -85,7 +85,7 @@ Par ailleurs, étant donné que [notre économie dépends fortement du Nigeria](
 
 ### Données et viz
 
-https://github.com/maclandrol/rice_benin
+[https://github.com/maclandrol/rice_benin](https://github.com/maclandrol/rice_benin)
 
 ### Selection de documentaires et lectures que je recommende.
 
