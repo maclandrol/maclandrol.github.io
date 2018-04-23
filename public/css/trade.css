@@ -21,7 +21,7 @@
 }
 @media (max-width: 38em) {
   .vizdiv {
-    width: 28rem;
+    max-width: 28rem;
   }
   #trademap, #ricebenin{
 	height: 26rem;
