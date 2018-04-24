@@ -144,7 +144,7 @@ En attendant les réformes de l'État, nous, en tant que citoyens, pouvons déj�
 	    })
         .tooltip({'children': false})
         .depth(0)
-		.footer({'value': '35.7 % des importations proviennent de la Thaïlande, l\'Inde et la Chine, essentiellement en raison de l\'importation abondant de riz.', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}})
+		.footer({'value': '35.7 % des importations proviennent de la Thaïlande, l\'Inde et la Chine, essentiellement en raison de l\'importation massive de riz.', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}})
 		.draw();
 
 
