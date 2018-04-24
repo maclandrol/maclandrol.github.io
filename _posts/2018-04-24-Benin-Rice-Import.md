@@ -19,7 +19,7 @@ Le Bénin a une balance commerciale déficitaire, et pas des moindres... Alors q
 À en croire ces données, la production locale est presque inexistante et la filière coton, dont les promesses de reviviscence nous ont été servies par les gourvenements successifs de ces dernières années, est `bien partie` pour boucher ce trou dans l'économie. 
 
 
-Jusque là, je ne vous apprends rien de nouveau! Et puis, avoir un commerce déficitaire n'est pas forcément signe d'une économie mal en point <sup>[1](https://www.nytimes.com/2016/12/02/upshot/want-to-rev-up-the-economy-dont-worry-about-the-trade-deficit.html?smid=pl-share&_r=1), [2](https://www.contrepoints.org/2011/03/31/19383-deficit-de-la-balance-commerciale-et-alors)</sup>. Après tout, nous pourrions nous féliciter d'appartenir au [*cercle restreint* de pays](https://tradingeconomics.com/country-list/balance-of-trade) tels que les États-Unis, la France, les UK, etc. Pourquoi s'alarmer donc ? *Right ?*
+Jusque là, je ne vous apprends rien de nouveau! Et puis, avoir un commerce déficitaire n'est pas forcément signe d'une économie mal en point<sup>[1](https://www.nytimes.com/2016/12/02/upshot/want-to-rev-up-the-economy-dont-worry-about-the-trade-deficit.html?smid=pl-share&_r=1), [2](https://www.contrepoints.org/2011/03/31/19383-deficit-de-la-balance-commerciale-et-alors)</sup>. Après tout, nous pourrions nous féliciter d'appartenir au [*cercle restreint* de pays](https://tradingeconomics.com/country-list/balance-of-trade) comme les États-Unis, la France, les UK, etc. Pourquoi s'alarmer donc ? *Right ?*
 
 
  
