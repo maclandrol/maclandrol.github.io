@@ -4,7 +4,6 @@ date: 2018-04-24
 title: "L'importation massive de riz au Bénin, une situation inquiétante"
 tags: ['benin', 'opendata', 'riz']
 comments: true
-infuture: true
 highlight: true
 style: ["public/css/trade.css"]
 ---
@@ -17,67 +16,69 @@ Le Bénin a une balance commerciale déficitaire, et pas des moindres... Alors q
   
 <div class="vizdiv" id='tradeplot'></div>
 
-À en croire ces données, la production locale est presque inexistante et la filière coton, dont les promesses de reviviscence nous ont été servi par les gourvenements successifs de ces dernières années, est `bien parti` pour boucher ce trou dans l'économie. 
+À en croire ces données, la production locale est presque inexistante et la filière coton, dont les promesses de reviviscence nous ont été servies par les gourvenements successifs de ces dernières années, est `bien partie` pour boucher ce trou dans l'économie. 
 
 
-Jusque là, je ne vous apprends rien de nouveau! Et puis, avoir un commerce déficitaire n'est pas forcément signe d'une économie mal en point <sup>[1](https://www.nytimes.com/2016/12/02/upshot/want-to-rev-up-the-economy-dont-worry-about-the-trade-deficit.html?smid=pl-share&_r=1), [2](https://www.contrepoints.org/2011/03/31/19383-deficit-de-la-balance-commerciale-et-alors)</sup>. Après tout, nous pourrions nous complimenter d'appartenir au [*cercle restreint* de pays](https://tradingeconomics.com/country-list/balance-of-trade) tels que les États-Unis, la France, les UK, etc. Pourquoi s'alarmer donc ? *Right ?*
+Jusque là, je ne vous apprends rien de nouveau! Et puis, avoir un commerce déficitaire n'est pas forcément signe d'une économie mal en point <sup>[1](https://www.nytimes.com/2016/12/02/upshot/want-to-rev-up-the-economy-dont-worry-about-the-trade-deficit.html?smid=pl-share&_r=1), [2](https://www.contrepoints.org/2011/03/31/19383-deficit-de-la-balance-commerciale-et-alors)</sup>. Après tout, nous pourrions nous féliciter d'appartenir au [*cercle restreint* de pays](https://tradingeconomics.com/country-list/balance-of-trade) tels que les États-Unis, la France, les UK, etc. Pourquoi s'alarmer donc ? *Right ?*
 
 
  
 ### Le riz, un problème qui n'inquiète personne.
 
-**`$774M`**, c'est le montant total des importations de riz, officiellement déclaré par le Bénin en 2016, soit plus que les USA (\$714M), un pays avec une population 30 fois plus importante. Ce chiffre correspond à 1.5 millions de tonnes de riz et exclu les ré-exportations "officielles" vers d'autres pays. Comparé à l'importation de riz dans des pays avec une population similaire (Belgique, Sénégal, Zimbabwe, etc), cette quantité est colossale. 
+**`$774M`**, c'est le montant total des importations de riz au Bénin en 2016, soit plus que les USA (\$714M), un pays avec une population 30 fois plus importante. Ce chiffre correspond à 1.5 millions de tonnes de riz et exclu les ré-exportations "officielles" vers d'autres pays. Comparé à l'importation de riz dans des pays avec une population similaire (Belgique, Sénégal, Zimbabwe, etc), cette quantité est inquiètante. 
 
 <div class="vizdiv" id="trademap"> </div>
 
-Il est vrai que nos habitudes alimentaires ont changé. Le riz, autrefois mets occasionnel, est devenu l'aliment de base de la population urbaine en expansion. Les raisons sont bien diverses, mais j'accuse entre autres, les programmes d'aide alimentaire distribuant leurs sacs de riz comme des petits pains. [Encore récemment](http://ortb.bj/index.php/societe/529-le-japon-fait-don-de-7000-tonnes-de-riz-au-benin), le Bénin a reçu du Japon, un *don de riz* pour renforcer la sécurité alimentaire. Destiné à une commercialiation à bas prix au profit des couches défavorisées, les recettes obtenues de la vente de ce riz pourraient être utilisées pour réaliser des projets socio-communautaires. À première vue, il faudrait donc saluer l'initiative, mais considérant la **mauvaise gestion légendaire** de nos autorités étatiques, cette `coopération nippo-beninoise` n'aura pour seule conséquence qu'alimenter notre dépendance au riz.
+Il est vrai que nos habitudes alimentaires ont changé. Le riz, autrefois mets occasionnel, est devenu l'aliment de base de la population urbaine en expansion. Les raisons sont bien diverses, mais j'accuse entre autres, les programmes d'aide alimentaire distribuant leurs sacs de riz comme des petits pains. [Encore récemment](http://ortb.bj/index.php/societe/529-le-japon-fait-don-de-7000-tonnes-de-riz-au-benin), le Bénin a reçu du Japon, un *don de riz* pour renforcer la sécurité alimentaire. La commercialisation à bas prix de ce riz, au profit des couches défavorisées, pourraient générer un revenu utilisable pour réaliser des projets socio-communautaires. À première vue, il faudrait donc saluer l'initiative, mais considérant la **mauvaise gestion légendaire** de nos autorités étatiques, cette `coopération nippo-beninoise` n'aura pour seul résultat qu'alimenter notre dépendance au riz.
 
 <div class="vizdiv" id="geodata"> </div>
 
-Malgré l'importante consommation de riz au Bénin, il serait quand même pernicieux de ma part, d'insunier que le béninois moyen consomme 136 kg de riz par an (soit [trois repas de riz, par personne, tous les jours](https://health.gov/dietaryguidelines/2015/guidelines/appendix-3/)). Une analyse plus approfondi de la quantité de riz importé *per capita* dans les pays limitrophes du Bénin, suggère qu'une partie du riz importé serait écoulée par voies informelles (et donc non déclaré) au Togo et/ou au Nigeria. Étant donné que l'importation de riz au [Togo couvre les besoins non comblés par la riziculture locale](https://riceforafrica.net/downloads/NRDS/Togo_fr.pdf), le Nigéria reste donc la seule destination probable de la ré-exportation du riz. D'ailleurs, presque l'entièreté des **"exportations officielles"** de riz au Bénin a pour destination unique le Nigéria. 
+Malgré l'importante consommation de riz blanc au Bénin, il serait quand même pernicieux d'insunier que le béninois consomme en moyenne 136 kg de riz par an (soit [trois plats de riz, par personne, chaque jour](https://health.gov/dietaryguidelines/2015/guidelines/appendix-3/). Une analyse plus approfondie de la quantité de riz importée *per capita* dans les pays limitrophes, suggère qu'une partie serait écoulée par voies informelles (et donc non déclarée) au Togo et/ou au Nigeria. Étant donné qu'au Togo, [l'importation couvre les besoins non comblés par la production locale](https://riceforafrica.net/downloads/NRDS/Togo_fr.pdf), le Nigéria reste donc la seule destination possible de la ré-exportation du riz. D'ailleurs, presque l'entièreté des **"exportations officielles"** de riz au Bénin a pour unique destination le Nigéria. 
 
 <div class="vizdiv" id="riceimport"> </div>
 
-Les taxes douanières du Nigéria sur l'importation du riz blanchi [sont effectivement exhorbitantes](https://www.unifiedjournals.org/ujafs/pdf/2016/jane.pdf). Depuis quelques années, le pays maintient aussi une interdiction sur l'importation via les frontières terrestres et l'achat à partir de devises étrangères.<sup>[3](https://www.export.gov/article?id=Nigeria-Prohibited-and-Restricted-Imports), [4](https://www.premiumtimesng.com/news/headlines/254114-nigeria-ban-rice-importation-year-buhari.html)</sup>. L'objectif visé ? atteindre une autosuffisance alimentaire en stimulant l'agriculture locale. La conséquence directe de cette politique est une réduction phénoménale de l'importation du riz étuvé dès 2016 <sup>[5](https://newtelegraphonline.com/2018/01/2017-rice-import-thailand-drops-23192mt/), [6](https://guardian.ng/news/nigerias-rice-importation-drops-to-20000mt/)</sup>. Bien que l'objectif initiale en ce qui concerne la production locale n'aie pas encore été atteinte, une nette augmentation a quand même été observée <sup>[7](http://www.punchng.com/rice-production-in-nigeria-increases-to-5-8m-tonnes-in-2017-rifan/), [8](https://www.thisdaylive.com/index.php/2017/12/13/cbn-local-rice-production-records-70-increase/) </sup>. Faut dire que le Nigeria a compris quelque chose en ce qui concerne l’autosuffisance alimentaire et pas nous...
+Les taxes douanières du Nigéria sur l'importation du riz blanchi [sont effectivement exhorbitantes](https://www.unifiedjournals.org/ujafs/pdf/2016/jane.pdf). Depuis quelques années, le pays maintient également une interdiction sur l'importation via les frontières terrestres et l'achat à partir de devises étrangères<sup>[3](https://www.export.gov/article?id=Nigeria-Prohibited-and-Restricted-Imports), [4](https://www.premiumtimesng.com/news/headlines/254114-nigeria-ban-rice-importation-year-buhari.html)</sup>. L'objectif visé ? atteindre une autosuffisance alimentaire en stimulant l'agriculture locale. Cette politique a permis une réduction phénoménale de l'importation du riz étuvé dès 2016 <sup>[5](https://newtelegraphonline.com/2018/01/2017-rice-import-thailand-drops-23192mt/), [6](https://guardian.ng/news/nigerias-rice-importation-drops-to-20000mt/)</sup>. Bien que l'objectif initial, en ce qui concerne la production locale, ne soit pas encore atteint, une nette augmentation a quand même été observée <sup>[7](http://www.punchng.com/rice-production-in-nigeria-increases-to-5-8m-tonnes-in-2017-rifan/), [8](https://www.thisdaylive.com/index.php/2017/12/13/cbn-local-rice-production-records-70-increase/) </sup>. Il faut dire que le Nigeria a compris quelque chose en ce qui concerne l’autosuffisance alimentaire et pas nous...
 
 <div class="midtitle">"un business très juteux"</div>
 
-La politique nigériane sur l'import du riz décortiqué fait [des heureux, au Cameroun et au Bénin](https://www.agenceecofin.com/riz/0304-18937-la-taxe-de-110-sur-les-importations-de-riz-fait-la-fortune-des-contrebandiers-beninois-et-camerounais). Un nouveau secteur **économique** bien juteux [est en plein essor](https://www.bloomberg.com/news/articles/2018-03-21/smugglers-run-riot-as-nigeria-tries-to-keep-foreign-rice-at-bay): `la contrebande de riz`. Le système est simple, tirer profit des 10% de droits de douane sur l'importation du riz au Bénin, négligeable face au ~60% nigérian. Pour ce faire, il suffit d'importer le riz via le port  autonome de cotonou puis faire passer la cargaison clandestinement à travers les frontières porreuses et corrompues qui nous sépare du Nigéria. Encore plus astucieux ? déclarer l'importation comme destiné au pays de l'hinterland pour être exempté de certaines taxes sur la consommation.
+La politique nigériane sur l'importation du riz décortiqué fait [des heureux, au Cameroun et au Bénin](https://www.agenceecofin.com/riz/0304-18937-la-taxe-de-110-sur-les-importations-de-riz-fait-la-fortune-des-contrebandiers-beninois-et-camerounais). Un nouveau **secteur économique** très lucratif [a vu le jour](https://www.bloomberg.com/news/articles/2018-03-21/smugglers-run-riot-as-nigeria-tries-to-keep-foreign-rice-at-bay): `la contrebande de riz`. Le système est simple: tirer profit de la [Taxe Extérieur Commune (TEC), adoptée par le Bénin](http://douanes-benin.net/index.php/2017/09/26/tec-cedeao-sh-2017/) en temps que membre de la CEDEAO/UEMOA. Cette TEC fixe les droits de douane sur l'importation du riz à 10% (l'une des plus basse au monde), négligeable face au ~60% du Nigéria. Pour les contrebandiers, il suffit donc d'importer le riz via le port autonome de **Cotonou** puis faire passer clandestinement la cargaison à travers les frontières porreuses et corrompues qui nous séparent du Nigéria. Encore plus astucieux ? déclarer l'importation comme destinée au pays de l'hinterland pour être exempté de certaines taxes sur la consommation.
 
-Certes, il faut admettre que l'explosion des importations de riz fait entrer des recettes fiscales importantes au Bénin; mais la contrebande subséquente a des effets désastreuses sur notre économie. Ce trafic vient nuire à nos efforts dans la lutte pour la régularisation du commerce informel entre le Bénin et le Nigéria, qui [représenterait entre 20 et 50 % de notre PIB](http://www.jeuneafrique.com/mag/519337/economie/grand-format-benin-une-economie-fortement-dependante-du-geant-nigerian/) selon diverses estimations (voir  [9](http://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/autrepart/010014755.pdf) et [10](https://openknowledge.worldbank.org/bitstream/handle/10986/9364/9782744076602.pdf) pour des analyses approfondies). D'après une étude récente (Banque mondiale)<sup>[10](https://openknowledge.worldbank.org/bitstream/handle/10986/9364/9782744076602.pdf)</sup>, le secteur informel malgré sa contribution importante au PIB, représenterait moins de 3% des recettes fiscales. La même étude estime que ces recettes augmenteraient de 25% à 75%, si ce secteur venait à être correctement régularisé. On pourrait tenter de dédramatiser en avançant que l'informel occupe et nourrit la population désoeuvrée. Personnellement, je trouve cet argument fallacieux. Qu'on ne se voile pas la face ! La contrebande du riz est bien organisée, et ne profite par à la ménagère désespérée, mais plutôt à des businessman véreux qui cherchent à *duper le "système"*.
+Certes, il faut admettre que l'explosion des importations de riz génère des recettes fiscales importantes au Bénin; mais la contrebande subséquente a des **effets désastreuses** sur notre économie. Ce trafic vient en effet nuire à nos efforts pour régulariser le commerce informel entre le Bénin et le Nigéria, qui [représenterait entre 20 et 50 % de notre PIB](http://www.jeuneafrique.com/mag/519337/economie/grand-format-benin-une-economie-fortement-dependante-du-geant-nigerian/) selon certaines estimations (voir [9](http://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/autrepart/010014755.pdf) et [10](https://openknowledge.worldbank.org/bitstream/handle/10986/9364/9782744076602.pdf) pour des analyses approfondies). D'après une étude récente de la Banque Mondiale<sup>[10](https://openknowledge.worldbank.org/bitstream/handle/10986/9364/9782744076602.pdf)</sup>, le secteur informel malgré sa contribution importante au PIB, participerait `à moins de 3%` de nos recettes fiscales. La même étude estime que ces recettes augmenteraient de 25% à 75%, si ce secteur venait à être correctement régularisé. 
+
+On pourrait tenter de dédramatiser en avançant que le trafic informel du riz occupe et nourrit la population désoeuvrée. Personnellement, je trouve cet argument fallacieux. Qu'on ne se voile pas la face ! La contrebande du riz est bien organisée. Elle ne profite par à la ménagère désespérée, mais plutôt à des businessmen véreux qui cherchent à duper le *système*.
 
 <div class="midtitle">"tout pour entraver l'autosuffisance en riz"</div>
 
-Même en ignorant l'aspect contrebande, l'importation massive de riz à d'autres répercussions. En effet, l'importation destinée à la consommation locale, elle aussi en plein hausse depuis quelques années, interfère avec nos espoirs pour une autosuffisance alimentaire. 
+Même en ignorant *l'aspect contrebande*, l'importation massive de riz blanchi à d'autres répercussions toutes aussi alarmantes. En effet, l'importation destinée à la consommation, elle aussi en hausse depuis quelques années, [heurte notre secteur agricole déjà sous-developpée](https://www.agenceecofin.com/riz/1007-21466-cedeao-la-taxe-de-10-sur-le-riz-importe-ne-protegera-pas-la-production-locale) et interfère avec nos espoirs pour une autosuffisance alimentaire.
 
-Le Bénin, en temps que membre de la CEDEAO, [adopte à travers la TEC (Taxe Extérieur Commune)](http://douanes-benin.net/index.php/2017/09/26/tec-cedeao-sh-2017/), sa politique commerciale commune. Cette TEC qui fixe la taxation douanière sur le riz importé à 10% dans la zone CEDEAO, l'une des plus basse au monde, [heurte notre secteur agricole déjà sous-developpée](https://www.agenceecofin.com/riz/1007-21466-cedeao-la-taxe-de-10-sur-le-riz-importe-ne-protegera-pas-la-production-locale).
-
-Il est vrai que l'importation est inévitable face à la sollicitation croissante du riz sur le territoire et l'incapacité de la production locale actuelle à satisfaire cette demande. Elle pourrait même rendre la riziculture locale plus compétitive. Cependant, maintenir des conditions qui ne contribuent qu'à inonder le marché de produits importés a sûrement l'effet contraire... La solution nigériane semble inadapté et trop radicale, d'autant plus que nous avons d'autres problèmes à résoudre préalablement.
+Étant donnée l'incapacité de la production locale à satisfaire, actuellement, la demande croissante de riz sur le territoire, il est vrai que l'importation est inévitable. Elle pourrait même rendre la riziculture locale plus compétitive. Cependant, maintenir des conditions qui ne contribuent qu'à inonder le marché de produits importés a sûrement l'effet contraire... La solution nigériane semble toutefois inadaptée et trop radicale, d'autant plus que nous avons d'autres problèmes à résoudre avant.
 
 <div class="vizdiv" id="ricebenin"> </div>
 
-Le Bénin dispose de conditions édaphiques et climatiques bien réparties sur l'ensemble du territoire et [très propices aux exploitations rizicoles](http://www.inter-reseaux.org/IMG/pdf/Rapport_Final_Etat_des_Lieux_Riz_1_.pdf). D'après [les rapports du Conseil de Concertation des Riziculteurs du Benin (CCR-B)](http://www.inter-reseaux.org/IMG/pdf/Rapport_Final_Etat_des_Lieux_Riz_1_.pdf), la production local aurait doublé entre 2007 et 2014, et les effort menés pour améliorer le rendement et la qualité du produit final semblent également fructueux. Mais tout comme les autres secteurs de l'agriculture vivrière, la culture du riz est confrontée à un nouveau défit : [l'accaparement massif des terres agricoles exploitables par des sociétés étrangères, parfois en connivence avec certaines ONGs](https://www.pambazuka.org/fr/governance/des-paysans-béninois-disent-non-à-l’accaparement-des-terres).  Dès acquisition, les cultures vivrières sur ces terres sont souvent remplacées par des projets de production de biocarbutant<sup>[11](http://www.fondation-farm.org/zoe/doc/foncier_benin.pdf), [12](https://dumas.ccsd.cnrs.fr/dumas-00948184/document), [13](http://terres.redtac.org/IMG/pdf/revue_de_la_litterature_finale_-_version_i_-_pre-atelier-2.pdf)</sup> ([culture de jatropha](https://www.wsj.com/articles/SB118788662080906716?mod=googlenews_wsj)
+Le Bénin dispose de conditions édaphiques et climatiques bien réparties sur l'ensemble du territoire et [très propices à la riziculture](http://www.inter-reseaux.org/IMG/pdf/Rapport_Final_Etat_des_Lieux_Riz_1_.pdf). D'après [les rapports du Conseil de Concertation des Riziculteurs du Benin (CCR-B)](http://www.inter-reseaux.org/IMG/pdf/Rapport_Final_Etat_des_Lieux_Riz_1_.pdf), la production locale aurait doublée entre 2007 et 2014, et les efforts menés pour améliorer le rendement et la qualité du produit final semblent également fructueux. Mais tout comme les autres secteurs de l'agriculture vivrière, la culture du riz est confrontée à un nouveau défit : [l'accaparement massif des terres agricoles exploitables par des sociétés étrangères, parfois en connivence avec certaines ONGs](https://www.pambazuka.org/fr/governance/des-paysans-béninois-disent-non-à-l’accaparement-des-terres). Dès acquisition, les cultures vivrières sur ces terres sont souvent remplacées par des projets de production de biocarburant<sup>[11](http://www.fondation-farm.org/zoe/doc/foncier_benin.pdf), [12](https://dumas.ccsd.cnrs.fr/dumas-00948184/document), [13](http://terres.redtac.org/IMG/pdf/revue_de_la_litterature_finale_-_version_i_-_pre-atelier-2.pdf)</sup> ([ex: culture de jatropha](https://www.wsj.com/articles/SB118788662080906716?mod=googlenews_wsj)
 
 
 <img class="img-center" src="https://i.imgflip.com/28qlfp.jpg"/>
 
-Un autre problème auquel les producteurs doivent faire face est la réticence de la population à consommer local. En effet, nos palais devenu bourgeois, préfèrent le *parfum exquis* du riz blanc jasmine/basmati asiatique à celui local, [qualifié à tort d'être de moins bonne qualité](https://youtu.be/OYKQMIrOf-Q?t=1m54s). 
+Un autre problème auquel doivent faire face les producteurs, est la réticence de la population à consommer le riz blanc local. Nos palais devenus bourgeois, préfèrent le *parfum exquis* du riz thaï/basmati asiatique à celui local, [qualifié à tort d'être de moins bonne qualité](https://youtu.be/OYKQMIrOf-Q?t=1m54s). 
 
-Tant que des mesures appropriées ne seront pas prises, l'avenir du riz blanc béninois restera *tout le contraire de sa couleur*.
+Tant que des mesures appropriées ne seront pas prises, l'avenir du riz blanc béninois sera *tout le contraire de sa couleur*.
 
 
 ### Nécéssité d'un dialogue impliquant tous les acteurs. 
 
 L'importance d'une autosuffisance en riz, l'État béninois en est bien conscient. Encore récemment, le secteur riz était l'une des priorités du gouvernement. Appuyé par le financement de l'Union Européenne à hauteur de 3.5 milliard de FCFA, entre 2009 et 2013<sup>[14](http://www.cantool.net/download/250/pafiriz.pdf), [15](http://www.rfi.fr/afrique/20170210-tres-chemin-croix-riz-beninois-local-importations-delice-nigeria)</sup>, le Bénin a fortement encouragé la filière. Comment comprendre alors pourquoi le gouvernement demeure sourd aux demandes parfaitement raisonnables des producteurs<sup>[16](http://www.rfi.fr/afrique/20170210-tres-chemin-croix-riz-beninois-local-importations-delice-nigeria), [17](https://westafrica.rikolto.org/en/node/1317)</sup>, en maintenant notamment une politique d'importation absurde ? 
 
-<div class="midtitle">"plateforme pour promouvoir la plateforme de promotion du riz ?"</div>
+<div class="midtitle">"nouvelle plateforme de promotion par la plateforme de promotion du riz ?"</div>
 
 Le problème ne se limite pas seulement à l'absence de réformes au niveau de l'État, il faudrait aussi tenir responsable le conseil de concertation des riziculteurs qui a échoué à promouvoir efficacement ses produits. Ce n'est évidemment pas par manque d'avoir essayé, mais les démarches entreprises dans la direction ne peuvent être qualifiées que de `«circle jerking bureaucratique»`. 
 
-En mai 2017, le CCR-B, en partenariat avec plusieurs professionnel des médias, avait constitué la [*"Plateforme d'informations et de Promotion du Riz du Benin"*](https://matinlibre.com/index.php/societe/item/11379-promotion-de-la-consommation-du-riz-made-in-benin-la-plateforme-des-professionnels-des-medias-constituee) avec pour promesse: `«Œuvrer pour une meilleure adoption du riz béninois par les béninois, et leur Etat»`. Un an plus tard, on se demande bien ou sont passés les résultats tant attendu de cette plateforme... Un véritable dialogue entre consommateurs, producteurs et autorités s'avère donc indispensable pour espérer un salut.
+En mai 2017, le CCR-B, en partenariat avec plusieurs professionnels des médias, avait constitué la [*"Plateforme d'informations et de Promotion du Riz du Benin (PiPr RB)"*](https://matinlibre.com/index.php/societe/item/11379-promotion-de-la-consommation-du-riz-made-in-benin-la-plateforme-des-professionnels-des-medias-constituee) ayant pour promesse: `«Œuvrer pour une meilleure adoption du riz béninois par les béninois, et leur Etat»`. Un an plus tard, on se demande bien ou sont passés les résultats tant attendus de cette plateforme... Un véritable dialogue entre consommateurs, producteurs et autorités s'avère donc indispensable pour espérer un salut.
 
-Nous avons besoin de nouvelles réformes facilitant l'accès à la production locale. La nécéssité de règlementations plus réfléchies en ce qui concerne l'importation s'impose également. Par exemple, un simple relèvement du droit de douane sur le riz à 20% pourrait s'avérer [bénéfique sur tous les plans](http://www.ecoasso.org/articles/Agossadou_et_al.pdf). 
-Par ailleurs, étant donné que [notre économie dépends fortement du Nigeria](https://www.reuters.com/article/us-nigeria-benin-smuggling/nigeria-recession-deals-blow-to-smuggling-hub-benin-idUSKBN17125X) et que le déficit en production de riz de ce dernier demeure énorme, l'adoption de mesures conjointes sur la gestion du riz pourrait être bénéfique au deux pays. Le Nigeria y gagnera une réduction de la contrebande de riz, et le Bénin, un partenaire commercial pour `l'exportation formelle` du riz produit localement. 
+<div class="midtitle">"des solutions potentielles ignorées"</div>
+
+C'est bien évident que nous avons besoin de nouvelles réformes facilitant l'accès à la production locale, et une règlementation plus réfléchie en ce qui concerne l'importation. Un simple relèvement de la taxe d'importation du riz à 20% pourrait en effet être [avantageux sur tous les plans](http://www.ecoasso.org/articles/Agossadou_et_al.pdf). 
+Par ailleurs, étant donné que [notre économie dépends fortement du Nigeria](https://www.reuters.com/article/us-nigeria-benin-smuggling/nigeria-recession-deals-blow-to-smuggling-hub-benin-idUSKBN17125X) et que le déficit en production de riz blanchi de ce dernier demeure énorme, l'adoption de mesures conjointes sur la gestion du riz pourrait être bénéfique aux deux pays. Le Nigeria y gagnera une réduction de la contrebande de riz, et le Bénin, un partenaire commercial pour `l'exportation formelle` de la production locale. 
 
 
 <br>
@@ -88,14 +89,14 @@ Par ailleurs, étant donné que [notre économie dépends fortement du Nigeria](
 
 [https://github.com/maclandrol/rice_benin](https://github.com/maclandrol/rice_benin)
 
-### Selection de documentaires et lectures que je recommende.
+### Selection de documentaires et lectures que je recommande.
 
 - [Mini-documentaire: Riz du Bénin, riz de demain](https://www.youtube.com/watch?v=zCNCoCh8FjQ)
 - [Reportage France 24 sur l'accaparement de terres arables](https://www.youtube.com/watch?v=GxFTGq94dXs)
 - [Le secteur informel en Afrique de l'Ouest francophone](https://openknowledge.worldbank.org/bitstream/handle/10986/9364/9782744076602.pdf)
-- [Discussion sur la ré-exportation vers le Nigéria, pilier du modèle économique béninois](http://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/autrepart/010014755.pdf)
+- [Discussion sur la ré-exportation vers le Nigéria, pilier de l'économie béninoise](http://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/autrepart/010014755.pdf)
 - [Un article qui résume la situation du riz au Nigéria (en)](https://www.pmnewsnigeria.com/2018/03/13/the-rice-war-how-asian-rice-importers-sabotage-nigerias-rice-policy/)
-- [Un autre qui parle de la contrebande](https://www.bloomberg.com/news/articles/2018-03-21/smugglers-run-riot-as-nigeria-tries-to-keep-foreign-rice-at-bay)
+- [Un autre qui parle de la contrebande (en)](https://www.bloomberg.com/news/articles/2018-03-21/smugglers-run-riot-as-nigeria-tries-to-keep-foreign-rice-at-bay)
 - [Enquête complète publiée sur RFI: Le chemin de croix du riz béninois](http://www.rfi.fr/afrique/20170210-tres-chemin-croix-riz-beninois-local-importations-delice-nigeria)
 - [Étude sur la compétitivité de la riziculture béninoise](http://www.hubrural.org/IMG/pdf/etude_competitivite_riziculture_beninoise.pdf)
 - [CCR-B: État des lieux de la filière riz au Bénin en 2014](http://www.inter-reseaux.org/IMG/pdf/Rapport_Final_Etat_des_Lieux_Riz_1_.pdf)
@@ -173,7 +174,7 @@ Par ailleurs, étant donné que [notre économie dépends fortement du Nigeria](
         		if (value == 'Import'){
 					viz_d3viz_94.data(import_dt_2016)
 					.title({"value":"Biens et services importés en 2016 par le Bénin", 'sub': "Source: ONU/Comtrade"})
-					.footer({'value': '35.7 % des importations proviennent de la Thaïlande, l\'Inde et la Chine, essentiellement en raison de l\'importation abondante de riz.', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}});
+					.footer({'value': '35.7 % des importations proviennent de la Thaïlande, l\'Inde et la Chine, essentiellement en raison de l\'importation massive de riz.', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}});
         		}
         		else{
 					viz_d3viz_94.data(export_dt_2016)
@@ -196,13 +197,15 @@ Par ailleurs, étant donné que [notre économie dépends fortement du Nigeria](
         .container('#geodata')
         .data(geo_data)
         .type("geo_map")
-        .coords({'value': '/public/assets/data/countries.json', 'projection':'equirectangular', 'threshold': 0.2})
+        .coords({'value': '/public/assets/data/countries.json', 'threshold': 0.2})
         .id('Country')
-        .color({'heatmap':['#f0f9e8','#ccebc5','#a8ddb5','#7bccc4','#4eb3d3','#2b8cbe','#08589e'], 'value':'Riz importé ($US)'})
+        .legend({'gradient':{"height": 8}, 'value':true, 'opacity': 1.0})
+        .color({'heatmap':['#f0f9e8','#ccebc5','#a8ddb5','#7bccc4','#43a2ca','#0868ac'], 'value':'Riz importé ($US)'})
         .text('Pays')
+        .title('Comparaison de la quantité de riz importée en 2016 dans une sélection de pays.')
         .tooltip(['Pays','Population','Riz importé ($US)','Quantité (kg)'])
-        .footer({'value': 'Le Bénin importe bien plus de riz "per capita" que la plupart des autres pays. La carte montre, à titre comparatif le montant total des importations de certains pays,. Les pays de l\'Asie (souvent producteurs de riz) sont exclus', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}})
-        .draw(); 
+        .footer({'value': 'Le Bénin importe bien plus de riz "per capita" que la plupart des autres pays. La carte montre, à titre comparatif le montant total des importations d\'une sélection de pays. Les pays de l\'Asie (souvent producteurs de riz) sont exclus', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}})        
+        .draw()
 
 
     var viz_rice_import = d3plus.viz()
@@ -217,7 +220,7 @@ Par ailleurs, étant donné que [notre économie dépends fortement du Nigeria](
 		.id('Reporter')
 		.title({"value":'Importation de riz au Bénin, Togo et Nigeria', 'sub': "Source: ONU/Comtrade"})
         .data(rice_import)
-        .footer({'value': 'L\'importation du riz au Togo reste constante tandis qu\'au Bénin, elle est en pleine croissance et connait des pics à chaque fois qu\'un déclin est observé au Nigéria. Les importations du Nigéria en 2015 sont manquantes', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}})
+        .footer({'value': 'L\'importation du riz au Togo reste constante tandis qu\'au Bénin, elle est en pleine croissance et connaît des pics à chaque fois qu\'un déclin est observé au Nigéria. Les importations du Nigéria en 2015 sont manquantes', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}})
         .draw();
 
      var viz_ricebenin = d3plus.viz()
@@ -229,8 +232,8 @@ Par ailleurs, étant donné que [notre économie dépends fortement du Nigeria](
 		.y({'value': 'Total en tonne', 'grid':false})
 		.x({'grid': false,'value': 'Année','ticks': {'labels': [1990,1995,2000,2005,2010,2015]}})
 		.id('Attribute_Description')
-		.title({"value":"Quantité de riz produit, importé et nécessaire au Bénin","sub":"Source: USDA/ CCR-B/ INSAE"})
-        .footer({'value': 'Les importations de riz comblent largement le déficit engendré par la production insuffisante. Notez qu\'il s\'agit d\'une estimation très conservative des besoins, basée sur une consommation annuelle de 35 kg/an/habitant et sur des données historiques du CCR-B (voir code). Les importations ne concernent que celles destinées à la consommation locale (corrigé pour tenir compte des exportations', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}})
+		.title({"value":"Quantité de riz produite, importée et nécessaire au Bénin","sub":"Source: USDA/ CCR-B/ INSAE"})
+        .footer({'value': 'Les importations de riz comblent largement le déficit engendré par la production insuffisante. Notez qu\'il s\'agit d\'une estimation très conservative des besoins, basée sur une consommation annuelle de 35 kg/an/habitant et sur des données historiques du CCR-B (voir code). Les importations ne concernent que celles destinées à la consommation locale (corrigées pour tenir compte de la ré-exportation informelle', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}})
 		.data(benin_rice)
 
 	viz_ricebenin.format({

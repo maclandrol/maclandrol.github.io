@@ -21,7 +21,7 @@
   .vizdiv {
     width: 28rem;
   }
-  #trademap, #ricebenin{
+  #ricebenin{
 	height: 26rem;
  }
 
@@ -30,7 +30,7 @@
   .vizdiv {
     max-width: 23rem;
   }
- #trademap, #ricebenin{
+  #ricebenin{
 	height: 24rem;
  }
 }
