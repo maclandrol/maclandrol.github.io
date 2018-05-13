@@ -3,6 +3,7 @@ layout: post
 title:  Jekyll-Fresh
 date:   2018-05-12
 tags: [en, jekyll, port, github, project]
+comments: true
 ---
 
 [Jekyll-Fresh]() is a port of the [Fresh](https://github.com/cssninjaStudio/fresh) landing one-page theme of [CSS Ninja](https://cssninja.io/) to [Jekyll](http://jekyllrb.com/). 

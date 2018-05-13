@@ -3,6 +3,7 @@ layout: post
 title:  "SuffixTreeJS"
 date:   2016-02-20
 tags: [en, js]
+comments: true
 ---
 
 Ukkonen's Algorithm for generalized suffix tree in javascript, using d3js for visualization : [SuffixTreeJS](http://www.mrnoutahi.com/SuffixTreeJS/)
