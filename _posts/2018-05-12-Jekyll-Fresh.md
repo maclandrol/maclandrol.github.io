@@ -6,7 +6,7 @@ tags: [en, jekyll, port, github, project]
 comments: true
 ---
 
-[Jekyll-Fresh]() is a port of the [Fresh](https://github.com/cssninjaStudio/fresh) landing one-page theme of [CSS Ninja](https://cssninja.io/) to [Jekyll](http://jekyllrb.com/). 
+[Jekyll-Fresh](https://github.com/maclandrol/Jekyll-Fresh) is a port of the [Fresh](https://github.com/cssninjaStudio/fresh) landing one-page theme of [CSS Ninja](https://cssninja.io/) to [Jekyll](http://jekyllrb.com/). 
 
 <!--more-->
 The theme is easily customizable, and can be published straight from GitHub, thanks to [GitHub Pages](https://pages.github.com/). All you have to do is clone the repository and edit the `_config.yml` file. 
