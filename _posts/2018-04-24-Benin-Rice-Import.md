@@ -235,7 +235,7 @@ En attendant les réformes de l'État, nous, en tant que citoyens, pouvons déj�
 		.x({'grid': false,'value': 'Année','ticks': {'labels': [1990,1995,2000,2005,2010,2015]}})
 		.id('Attribute_Description')
 		.title({"value":"Quantité de riz produite, importée et nécessaire au Bénin","sub":"Source: USDA/ CCR-B/ INSAE"})
-        .footer({'value': 'Les importations de riz comblent largement le déficit engendré par la production insuffisante. Notez qu\'il s\'agit d\'une estimation très conservative des besoins, basée sur une consommation annuelle de 35 kg/an/habitant et sur des données historiques du CCR-B (voir code). Les importations ne concernent que celles destinées à la consommation locale (corrigées pour tenir compte de la ré-exportation informelle', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}})
+        .footer({'value': 'Les importations de riz comblent largement le déficit engendré par la production insuffisante. Notez qu\'il s\'agit d\'une estimation très conservative des besoins, basée sur une consommation annuelle de 35 kg/an/habitant et sur des données historiques du CCR-B (voir code). Les importations ne concernent que celles destinées à la consommation locale (corrigées pour tenir compte de la ré-exportation informelle)', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}})
 		.data(benin_rice)
 
 	viz_ricebenin.format({
