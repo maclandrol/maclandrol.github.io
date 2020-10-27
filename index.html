@@ -1,62 +1,12 @@
 ---
-layout: default
-title: Home
+layout: home
+breadcrumb:
+  -
+    label: Posts
+
+# Index page
+# v2.0
+# https://github.com/cotes2020/jekyll-theme-chirpy
+# © 2017-2019 Cotes Chung
+# MIT License
 ---
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  {% if post.infuture %}
-  {% else %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}
-    {% if site.disqus_shortname and post.comments %}
-    &middot;      
-      <a href="{{ site.url }}{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
-    {% endif %}
-    </span>
-      {{ post.excerpt }}
-    <a class="More" href="{{ post.url }}"> read more --></a>
-  </div>
-  {% endif %}
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
-
-
-<!-- Add Disqus comment count (not the comments) -->
-{% if site.disqus_shortname %}
-<script type="text/javascript">
-  /* * * CONFIGURATION VARIABLES * * */
-  var disqus_shortname  = '{{ site.disqus_shortname }}';
-  // var disqus_developer = 1; // Comment out when the site is live
-  /* * * DON'T EDIT BELOW THIS LINE * * */
-  (function () {
-      var s = document.createElement('script'); s.async = true;
-      s.type = 'text/javascript';
-      s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-  }());
-</script>
-{% endif %}

@@ -2,14 +2,13 @@
 layout: post
 title:  "Fisher's Exact test for mxn contingency table"
 date:   2016-01-03
+categories: [Package, general]
 tags: [statistics, python, en]
-comments: true
 ---
 
 
 I was working on a project where I needed to compare categorical data in order to determine if there is any association between them. For my particular problem, a chi2 test wouldn't work, so I needed a Fisher's exact test. Since there aren't any code in python to perform the Fisher's exact test for larger than 2x2 table, I decided to write my own. You can find it here : [FisherExact](https://github.com/maclandrol/FisherExact).
-<!--more-->
-
+s
 Usually, you would use a chi2 test for independence (which is implemented in most programming languages) to compare association between categorical data. The problem was that I had low count in my contingency table.
 
 Although it's commonly accepted that the Cochran's rule **of at least 5 count in each cell of the expected table is too strict**, I actually had really low total counts and cells with 0 count in my observed table. Thus, using an exact test is probably more suited. In fact, [McDonald recommend, as a rule of thumb, to use an exact test when the total count is lower than 1000](http://www.biostathandbook.com/small.html). 

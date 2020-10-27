@@ -2,11 +2,13 @@
 layout: post
 title:  "First Post"
 date:   2015-12-22
+categories: [Life, Me]
 tags: [en]
+toc: false
 ---
 
 2016 is near, and like any new year it comes with taking new resolutions. 
-<!--more-->
+
 This year I decided to :
 
 * be more organised

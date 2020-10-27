@@ -1,46 +1,77 @@
-<head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<!--
+  The Head
+  v2.0
+  https://github.com/cotes2020/jekyll-theme-chirpy
+  © 2017-2019 Cotes Chung
+  MIT License
+-->
 
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme" content="{{ site.data.meta.name }} {{ site.data.meta.version }}">
+
+  {% seo title=false %}
 
   <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
+  {%- unless page.layout == "home" -%}
+    {{ page.title | append: " | "}}
+  {%- endunless -%}
+    {{ site.title }}
   </title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/public/css/lanyon.css">
-  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  {% include favicons.html %}
 
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
+  <!-- GA -->
+  {% if jekyll.environment == 'production' %}
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
 
-  <!-- Icons -->
-  <link rel="apple-touch" sizes="144x144" href="{{ site.baseurl }}/public/images/apple-touch.png">
-  <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
-
-  
-  <!-- style inside the page -->
-  {% if page.style %}
-    {% for stl in page.style %}
-      {% if stl contains "http" %}
-        <link rel="stylesheet" href="{{ stl }}">
-      {% else %}
-        <link rel="stylesheet" href="{{ site.baseurl }}/{{ stl }}">
-      {% endif %}      
-    {% endfor %}
-
+    {% if site.google_analytics.pv.proxy_url and site.google_analytics.pv.enabled %}
+      <link rel="preconnect" href="{{ site.google_analytics.pv.proxy_url }}" crossorigin="use-credentials">
+      <link rel="dns-prefetch" href="{{ site.google_analytics.pv.proxy_url }}">
+    {% endif %}
   {% endif %}
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+  <!-- jsDelivr CDN -->
+  <link rel="preconnect" href="cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="cdn.jsdelivr.net">
+
+  <!-- Bootstrap -->
+  <link rel="preload" as="style"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=" crossorigin>
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+    crossorigin="anonymous">
+
+  {% include css-selector.html %}
+
+  <!-- JavaScripts -->
+
+  <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/jquery@3.4.1"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.15.0,npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" async></script>
+
+  {% include js-selector.html %}
+  {% include custom-css.html %}
+
 </head>

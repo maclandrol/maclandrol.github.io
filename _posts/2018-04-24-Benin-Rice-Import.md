@@ -2,17 +2,17 @@
 layout: post
 date: 2018-04-24
 title: "L'importation massive de riz au Bénin, une situation inquiétante"
-tags: ['benin', 'opendata', 'riz']
+categories: [Benin, Development]
+tags: ['benin', 'opendata', 'riz', 'fr']
 comments: true
 highlight: true
-style: ["public/css/trade.css"]
+toc: false
+style: ["assets/css/posts/rice/trade.css", "assets/css/posts/general.css"]
 ---
 
 ### Un déficit commercial qui ne cesse de se creuser
 
 Le Bénin a une balance commerciale déficitaire, et pas des moindres... Alors que la valeur monétaire des importations augmente exponentiellement chaque année, peu a changé en ce qui concerne les exportations. En 2016, le Bénin importait  \$2.63 milliards de biens, 6 fois plus que le total de ses exportations (\$410M).
-
-<!--more-->
   
 <div class="vizdiv" id='tradeplot'></div>
 
@@ -42,8 +42,6 @@ Les taxes douanières du Nigéria sur l'importation du riz blanchi [sont effecti
 <div class="midtitle">"un business très juteux"</div>
 
 La politique nigériane sur l'importation du riz décortiqué fait [des heureux, au Cameroun et au Bénin](https://www.agenceecofin.com/riz/0304-18937-la-taxe-de-110-sur-les-importations-de-riz-fait-la-fortune-des-contrebandiers-beninois-et-camerounais). Un nouveau **secteur économique** très lucratif [a vu le jour](https://www.bloomberg.com/news/articles/2018-03-21/smugglers-run-riot-as-nigeria-tries-to-keep-foreign-rice-at-bay): `la contrebande de riz`. Le système est simple: tirer profit de la [Taxe Extérieur Commune (TEC), adoptée par le Bénin](http://douanes-benin.net/index.php/2017/09/26/tec-cedeao-sh-2017/) en tant que membre de la CEDEAO/UEMOA. Cette TEC fixe les droits de douane sur l'importation du riz à 10% (l'une des plus basse au monde), négligeable face au ~60% du Nigéria. Pour les contrebandiers, il suffit donc d'importer le riz via le port autonome de **Cotonou** puis faire passer clandestinement la cargaison à travers les frontières porreuses et corrompues qui nous séparent du Nigéria. Encore plus astucieux ? déclarer l'importation comme destinée au pays de l'hinterland pour être exempté de certaines taxes sur la consommation.
-
-Certes, il faut admettre que l'explosion des importations de riz génère des recettes fiscales importantes au Bénin; mais la contrebande subséquente a des **effets désastreuses** sur notre économie. Ce trafic vient en effet nuire à nos efforts pour régulariser le commerce informel entre le Bénin et le Nigéria, qui [représenterait entre 20 et 50 % de notre PIB](http://www.jeuneafrique.com/mag/519337/economie/grand-format-benin-une-economie-fortement-dependante-du-geant-nigerian/) selon certaines estimations (voir [9](http://horizon.documentation.ird.fr/exl-doc/pleins_textes/pleins_textes_7/autrepart/010014755.pdf) et [10](https://openknowledge.worldbank.org/bitstream/handle/10986/9364/9782744076602.pdf) pour des analyses approfondies). D'après une étude récente de la Banque Mondiale<sup> [10](https://openknowledge.worldbank.org/bitstream/handle/10986/9364/9782744076602.pdf)</sup>, le secteur informel malgré sa contribution importante au PIB, participerait `à moins de 3%` de nos recettes fiscales. La même étude estime que ces recettes augmenteraient de 25% à 75%, si ce secteur venait à être correctement régularisé. 
 
 On pourrait tenter de dédramatiser en avançant que le trafic informel du riz occupe et nourrit la population désoeuvrée. Personnellement, je trouve cet argument fallacieux. Qu'on ne se voile pas la face ! La contrebande du riz est bien organisée. Elle ne profite par à la ménagère désespérée, mais plutôt à des businessmen véreux qui cherchent à duper le *système*.
 
@@ -105,7 +103,7 @@ En attendant les réformes de l'État, nous, en tant que citoyens, pouvons déj�
 
 
 
-<script src="/public/assets/data/trade.js" type="text/javascript" charset="utf-8" ></script>
+<script src="/assets/data/rice/trade.js" type="text/javascript" charset="utf-8" ></script>
 <script src='//d3plus.org/js/d3.js' type='text/javascript'></script>
 <script src='//d3plus.org/js/topojson.js' type='text/javascript'></script>
 <script src='//d3plus.org/js/d3plus.js' type='text/javascript'></script>
@@ -199,7 +197,7 @@ En attendant les réformes de l'État, nous, en tant que citoyens, pouvons déj�
         .container('#geodata')
         .data(geo_data)
         .type("geo_map")
-        .coords({'value': '/public/assets/data/countries.json', 'threshold': 0.2})
+        .coords({'value': '/assets/data/rice/countries.json', 'threshold': 0.2})
         .id('Country')
         .legend({'gradient':{"height": 8}, 'value':true, 'opacity': 1.0})
         .color({'heatmap':['#f0f9e8','#ccebc5','#a8ddb5','#7bccc4','#43a2ca','#0868ac'], 'value':'Riz importé ($US)'})
@@ -207,7 +205,7 @@ En attendant les réformes de l'État, nous, en tant que citoyens, pouvons déj�
         .title('Comparaison de la quantité de riz importée en 2016 dans une sélection de pays.')
         .tooltip(['Pays','Population','Riz importé ($US)','Quantité (kg)'])
         .footer({'value': 'Le Bénin importe bien plus de riz "per capita" que la plupart des autres pays. La carte montre, à titre comparatif le montant total des importations d\'une sélection de pays. Les pays de l\'Asie (souvent producteurs de riz) sont exclus', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}})        
-        .draw()
+        .draw();
 
 
     var viz_rice_import = d3plus.viz()
@@ -236,7 +234,7 @@ En attendant les réformes de l'État, nous, en tant que citoyens, pouvons déj�
 		.id('Attribute_Description')
 		.title({"value":"Quantité de riz produite, importée et nécessaire au Bénin","sub":"Source: USDA/ CCR-B/ INSAE"})
         .footer({'value': 'Les importations de riz comblent largement le déficit engendré par la production insuffisante. Notez qu\'il s\'agit d\'une estimation très conservative des besoins, basée sur une consommation annuelle de 35 kg/an/habitant et sur des données historiques du CCR-B (voir code). Les importations ne concernent que celles destinées à la consommation locale (corrigées pour tenir compte de la ré-exportation informelle)', 'padding': 20, 'font': {'familly': '"Helvetica Neue", Lato, Arial, sans-serif;', 'size':12}})
-		.data(benin_rice)
+		.data(benin_rice);
 
 	viz_ricebenin.format({
 	      "text": function(text, params) {

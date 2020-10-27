@@ -1,0 +1,11 @@
+.midtitle{
+  text-align : center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 7px;
+  margin-bottom: 10px;
+  font-family:  'Fira Sans', sans-serif;
+  font-style: italic;
+  color: #777777;
+  font-size: 1.1rem; /* 15px */
+}

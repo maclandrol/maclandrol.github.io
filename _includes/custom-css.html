@@ -1,0 +1,11 @@
+  <!-- style inside the page -->
+  {% if page.style %}
+    {% for stl in page.style %}
+      {% if stl contains "http" %}
+        <link rel="stylesheet" href="{{ stl }}">
+      {% else %}
+        <link rel="stylesheet" href="{{ site.baseurl }}/{{ stl }}">
+      {% endif %}      
+    {% endfor %}
+
+  {% endif %}

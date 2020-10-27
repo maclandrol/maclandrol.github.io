@@ -2,15 +2,13 @@
 layout: post
 date: 2016-01-09
 title: "Why you should use ete for tree exploration and visualisation in python !"
-tags: [phylogenetics, python, tree, en]
-comments: true
+tags: [python, tree, en]
+categories: [Package, Phylogenetics]
 ---
 
 If you work with trees (phylogenetics or not) and you regularly use python, you have probably used or heard about one of the following packages: [Bio.phylo](https://github.com/biopython/biopython/tree/master/Bio/Phylo), [dendropy](https://pythonhosted.org/DendroPy/) or [ETE](http://etetoolkit.org). 
 
 While each one of those packages has its own unique strengths and weaknesses, I particularly like the **ETE** module. Here is why !
-
-<!--more-->
 
 This post is based on one of my past presentation at [monbug](http://www.monbug.ca/). I actually convert the ipython notebook to this markdown with nbconvert as described by [Christopher S. Corley on his blog](http://christop.club/2014/02/21/blogging-with-ipython-and-jekyll/). The config I used with nbconvert can be [found here](https://gist.github.com/ad0c4ec49be8b891d444). The github repository with all the original files for the presentation can be found here : [monbug_ete](https://github.com/maclandrol/monbug_ete). You can use [nbviewer](http://nbviewer.ipython.org/github/maclandrol/monbug_ete/blob/master/mon_bug_sep3.ipynb) to view the notebook directly if you prefer.
 
@@ -257,7 +255,7 @@ t.render('tree.png', dpi=200)
 {% endhighlight %}
 
  
-![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_29_0.png) 
+![png]({{ site.baseurl }}/assets/img/posts//mon_bug_oct_files/mon_bug_oct_29_0.png) 
 
 
  
@@ -280,7 +278,7 @@ t.render('tree2.png', tree_style=ts)
 {% endhighlight %}
 
  
-![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_31_0.png) 
+![png]({{ site.baseurl }}/assets/img/posts//mon_bug_oct_files/mon_bug_oct_31_0.png) 
 
 
 Let's draw a circular tree now
@@ -296,7 +294,7 @@ t.render('tree3.png', tree_style=ts, w=500)
 {% endhighlight %}
 
  
-![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_32_0.png) 
+![png]({{ site.baseurl }}/assets/img/posts//mon_bug_oct_files/mon_bug_oct_32_0.png) 
 
 
  
@@ -320,11 +318,11 @@ Image('face_positions.png')
 
 Faces can be added at different areas around a node.
  
-![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_34_1.png) 
+![png]({{ site.baseurl }}/assets/img/posts//mon_bug_oct_files/mon_bug_oct_34_1.png) 
 
 With Faces, you can actually make things like this (treeception) :
 
-![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_36_0.png) 
+![png]({{ site.baseurl }}/assets/img/posts//mon_bug_oct_files/mon_bug_oct_36_0.png) 
 
 It's also possible to define a layout function that will determine how a node will be rendered. Let's see how to do that and in which cases this could be useful with the next example.
 
@@ -399,7 +397,7 @@ t.render("tree4.png", dpi=600, tree_style = ts)
 {% endhighlight %}
 
 
-![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_39_0.png) 
+![png]({{ site.baseurl }}/assets/img/posts//mon_bug_oct_files/mon_bug_oct_39_0.png) 
 
 
  
@@ -467,7 +465,7 @@ t.render("%%inline", tree_style=ts, dpi=300)
 {% endhighlight %}
 
  
-![png]({{ site.baseurl }}/public/images/mon_bug_oct_files/mon_bug_oct_42_0.png) 
+![png]({{ site.baseurl }}/assets/img/posts//mon_bug_oct_files/mon_bug_oct_42_0.png) 
 
 
 

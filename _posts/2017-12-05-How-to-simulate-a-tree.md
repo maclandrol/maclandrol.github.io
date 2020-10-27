@@ -2,14 +2,13 @@
 layout: post
 date: 2017-12-05
 title: "How to simulate a phylogenetic tree ? (part 1)"
-tags: ['phylogenetic', 'tree', 'bioinfo', 'python']
+categories: [Algorithm, Tree]
+tags: ['phylogenetic', 'python']
 comments: true
 math: true
 ---
 
 Benchmarking phylogenetic algorithms often required the availability of a dataset of true evolutionary histories. As these true histories are hardly known, we rely instead on simulated datasets. In this series of post, I will present simple algorithms for the simulation of phylogenetic trees depicting the evolutionary history of a gene family. This first part will focus on the simulation of `species tree` under either a `pure birth` or a `birth-death` process.
-
-<!--more-->
 
 Simulations of phylogenetic trees are often conducted under a constant rate of evolution (molecular clock). The molecular clock can later be relaxed to allow variation in rates accross branches. In fact, the algorithms presented here will only consider elapsed time. Therefore, branch lengths will only represent time (no substitution rate). 
 
@@ -27,13 +26,13 @@ For a straightforward implementation (code below), we start with a pool of extan
 - Total evolution time
 - Total number of extant species (number of leaves)
 
-See <a href="#file-tree_simul-py-L19">birth_only_tree</a> at the end of the post for an implementation in python that use <strong><a href="http://etetoolkit.org">ETE</a></strong> and can be easily adapted to your need.
+See <a href="#file-posts/tree_simul-py-L19">birth_only_tree</a> at the end of the post for an implementation in python that use <strong><a href="http://etetoolkit.org">ETE</a></strong> and can be easily adapted to your need.
 
 And an example of output is :
 
 <pre>(((T1:0.523488,T2:0.523488)1:0.422493,(T3:0.79018,(T4:0.547927,T5:0.547927)1:0.242252)1:0.155801)1:0.294638,(T6:1.12469,T7:1.12469)1:0.115934);</pre>
 
-![Pure Yule tree]({{ site.baseurl }}/public/images/tree_simul/yule.svg "Ultrametric tree")
+![Pure Yule tree]({{ site.baseurl }}/assets/img/posts/tree_simul/yule.svg "Ultrametric tree")
 
 
 As you can see, the simulated tree is perfectly ultrametric.
@@ -41,13 +40,13 @@ As you can see, the simulated tree is perfectly ultrametric.
 ## Simulating a tree in a birth-death model
 
 In a birth-death model, lineage can go extinct. Therefore, a rate for death events should additionally be be considered. Similar to the Yule process, in a small interval of time \\( ]t_i, t_i + \Delta t[ \\) , only one of the three following transitions are possible: `one death`, `one birth` or `no event`. 
-The birth-death model is one of the most used for the simulation of species trees. Implementation of this model (<a href="#file-tree_simul-py-L84">birth_death_tree</a> ) follows a structure similar to the one above. The most important difference is to ensure that extinct species cannot be selected to give birth and should not have their branch lengths updated either. 
+The birth-death model is one of the most used for the simulation of species trees. Implementation of this model (<a href="#file-posts/tree_simul-py-L84">birth_death_tree</a> ) follows a structure similar to the one above. The most important difference is to ensure that extinct species cannot be selected to give birth and should not have their branch lengths updated either. 
 
 And an example of output is :
 
 <pre>(((T1:1.59667,T2:1.59667)1:0.63352,(T3:1.66694,T4:1.66694)1:0.563248)1:1.12677,(:1.27368,:0.239961)1:0.268062);</pre>
 
-![Birth-death tree]({{ site.baseurl }}/public/images/tree_simul/bd.svg "Birth-death tree")
+![Birth-death tree]({{ site.baseurl }}/assets/img/posts/tree_simul/bd.svg "Birth-death tree")
 
 The lost nodes are shown in gray dashed line. You can see that the corresponding lineage are at a shorter distance from the root compared to extant species. 
 
