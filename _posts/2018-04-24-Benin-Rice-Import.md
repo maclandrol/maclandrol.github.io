@@ -104,9 +104,9 @@ En attendant les réformes de l'État, nous, en tant que citoyens, pouvons déj�
 
 
 <script src="/assets/data/rice/trade.js" type="text/javascript" charset="utf-8" ></script>
-<script src='//d3plus.org/js/d3.js' type='text/javascript'></script>
-<script src='//d3plus.org/js/topojson.js' type='text/javascript'></script>
-<script src='//d3plus.org/js/d3plus.js' type='text/javascript'></script>
+<script src='//d3plus.org/js/d3.min.js' type='text/javascript'></script>
+<script src='//d3plus.org/js/topojson.min.js' type='text/javascript'></script>
+<script src='//d3plus.org/js/d3plus.min.js' type='text/javascript'></script>
         
 <script>
 (function(){

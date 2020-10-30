@@ -31,13 +31,11 @@ twitter:
 
 social:
   name: Emmanuel Noutahi                  # it will shows as the copyright owner in Footer
-  email: emmanuel.noutahi@doamin.com             # change to your email address
+  email: emmanuel.noutahi+blog@google.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
+    - https://twitter.com/ENoutahi      # change to your twitter homepage
+    - https://github.com/maclandrol       # change to your github homepage
     # - https://www.linkedin.com/in/username
 
 google_site_verification: 910yCjHCLkcGwd5gKUE10Pdoyjjz5OvTtt9bHUia9Bk # change to your verification string
