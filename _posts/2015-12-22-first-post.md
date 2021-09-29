@@ -22,9 +22,9 @@ Well, I'm still not motivated, but I decided to follow the advices of one guy fr
 
 So yes **no more zero days**. And the best way I found to monitor my progression is by starting a blog where I will share my work and thoughts.
 
-Since I already owned a domain name and with [github](https://pages.github.com/) offering free hosting (yeahhh !!!), I went through [jekyll's docs](http://jekyllrb.com/docs/home/) and in one day (ok you got me, two days), everything was set. It was easier than I thought. I started with [Lanyon](http://lanyon.getpoole.com/) a Jekyll theme based on [Poole](http://getpoole.com/) and customize it to fit my needs. I added a footer, a comment system (Google+ comments), a *fancy* picture of me in the sidebar and a [favicon](/public/avatar.png) made with gimp (the N is for Noutahi if you didn't guess).
+Since I already owned a domain name and with [github](https://pages.github.com/) offering free hosting (yeahhh !!!), I went through [jekyll's docs](http://jekyllrb.com/docs/home/) and set this up quickly.
 
-I can't promise that this blog will be regularly updated, but I will do my best...
+I can niether promise that this blog will be regularly updated nor that the content will be interesting, but I will do my best...
 
 Merry christmas and happy new year to all !!
 

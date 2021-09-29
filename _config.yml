@@ -9,12 +9,12 @@
 #--------------------------
 permalink: pretty
 
-title: Anti-Hype
+title: "Low data regime"
 
-tagline: "The network will learn."  # it will display as the sub-title
+tagline: "The network will learn"  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Some boring thoughts on computational biology, machine learning and drug discovery
+  Unfiltered thoughts on machine learning, computational biology, drug discovery and politics.
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://mrnoutahi.com'
